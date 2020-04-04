@@ -1,0 +1,356 @@
+object FSainteLague: TFSainteLague
+  Left = 414
+  Height = 372
+  Top = 174
+  Width = 656
+  BorderIcons = [biSystemMenu]
+  Caption = 'Perhitungan Sainte Lague'
+  ClientHeight = 372
+  ClientWidth = 656
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object PAtas: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 656
+    Align = alTop
+    BevelOuter = bvLowered
+    Caption = 'Perhitungan Sainte Lague'
+    Font.Height = -17
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PBawah: TPanel
+    Left = 0
+    Height = 50
+    Top = 322
+    Width = 656
+    Align = alBottom
+    BevelOuter = bvLowered
+    ClientHeight = 50
+    ClientWidth = 656
+    TabOrder = 1
+    object BBaru: TBitBtn
+      Left = 224
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Reset'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00196B3788196B37F2196B37FF196B37F2196B3788FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00196B
+        3784288C53FF64BA8DFF95D2B2FF64BA8DFF288C53FF196B378CA97151A9C38E
+        68FFC08B66FFBE8864FFBB8561FFB9835FFFB47E5CFFB27C5AFFB17B58FF206C
+        3AFF62BA8BFF60BA87FFFFFFFFFF60B987FF67BC8FFF196B37F7C8926CFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF317B
+        4CFF9CD4B6FFFFFFFFFFFFFFFFFFFFFFFFFF95D2B2FF196B37FFCA946EFFFFFF
+        FFFFFFFFFFFFFFFFFEFFFFFFFDFFFEFEFDFFFEFEFCFFFEFEFCFFFEFEFCFF4A8B
+        62FF90D3B1FF92D6B1FFFFFFFFFF65BC8CFF67BC8FFF196B37F7CC976FFFFFFF
+        FFFFFFFFFCFFFFFFFDFFFEFEFCFFFEFEFCFFFEFEFBFFFDFDFAFFFDFDFAFFA7C6
+        B1FF61AB81FF95D4B4FFBAE6D0FF6ABB8FFF2D8F57FF196B378CD19C73FFFFFF
+        FFFFFEFEFCFFFEFEFCFFFEFEFCFFFDFDFBFFFDFDFBFFFDFDFAFFFDFDF8FFFBFB
+        F9FFACC8B5FF609975FF4F8E66FF4A8A61FF717951FFFFFFFF00D49E75FFFFFF
+        FFFFFEFEFCFFFDFDFBFFFDFDFCFFFDFDFBFFFDFDF9FFFCFCF8FFFBF9F7FFFBF9
+        F5FFFBF8F4FFFBF7F2FFFBF5F2FFFFFFFFFFB27C5AFFFFFFFF00D5A076FFFFFF
+        FFFFFDFDFCFFFDFDFBFFFDFDFAFFFCFCF9FFFCFBF7FFFBF9F5FFFBF8F4FFFBF7
+        F3FFFBF5F2FFFAF3EFFFF8F2ECFFFFFFFFFFB57E5CFFFFFFFF00D8A279FFFFFF
+        FFFFFDFDFAFFFCFCFAFFFCFBF9FFFBFAF6FFFBF8F5FFFBF7F4FFFBF6F1FFF8F4
+        EEFFF7F2EBFFF7F0EAFFF6ECE8FFFFFFFFFFB7815EFFFFFFFF00D9A379FFFFFF
+        FFFFFCFBF9FFFCFBF8FFFBF9F7FFFBF7F4FFFAF7F2FFF9F5F0FFF7F3EDFFF6EF
+        EAFFF5EBE7FFF3EAE4FFF2E7DEFFFFFFFFFFBA8560FFFFFFFF00DBA47AFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBD8763FFFFFFFF00DCA77BFFDCA7
+        7BFFDCA77BFFDCA77BFFDCA77BFFDCA77BFFDCA77BFFDCA77BFFDCA77BFFDCA7
+        7BFFDCA77BFFDCA77BFFDCA77BFFDCA77BFFC08B66FFFFFFFF00DDAC85FDE8B9
+        92FFE8B992FFE8B992FFE8B992FFE8B992FFE8B992FFE8B992FFE8B992FFE8B9
+        92FFE8B992FFE8B992FFE8B992FFE8B992FFC1906FFDFFFFFF00A971516BDDB1
+        8DF4DCA77BFFDCA67AFFDAA47AFFD8A279FFD5A076FFD49E75FFD29D73FFCF9A
+        72FFCE9970FFCB966FFFC9946CFFC49A7AF4A971516BFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      OnClick = BBaruClick
+      TabOrder = 0
+    end
+    object BSimpan: TBitBtn
+      Left = 344
+      Height = 30
+      Top = 8
+      Width = 88
+      Caption = 'Kalkulasi'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF007A7A7AD3848383F5878686FF878787FF888887FF898988FF898888FF8888
+        88FF888887FF878686FF848382F87A7A7AC7FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00868686FBC2C2C1FEBCBCBCFFBCBCBCFFBCBCBBFFBCBCBBFFBCBCBBFFBCBC
+        BBFFBCBCBBFFBCBCBBFFC2C2C1FE878786F6FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF008C8C8BFFFFFFFFFFEBEBEBFFEBEBEBFFE9E9E9FFE8E8E8FFE7E7E7FFE7E7
+        E7FFE6E6E6FFE6E6E6FFFFFFFFFF8E8D8CFFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00929191FFFFFFFFFFB4B4B4FF949494FFE7E7E7FFB2B2B2FF939393FFE3E3
+        E3FFB0B0B0FF919191FFFBFBFBFF929291FFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00959595FFFFFFFFFFE8E8E8FFE7E7E7FFE5E5E5FFE3E3E3FFE2E2E2FFE0E0
+        E0FFDFDFDFFFDCDCDCFFFFFFFFFF959595FFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF009A9A99FFFFFFFFFFB1B1B1FF919191FFE2E2E2FFADADADFF8F8F8FFFDCDC
+        DCFFA9A9A9FF8D8D8DFFFBFBFBFF9A9999FFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF009E9D9DFFFFFFFFFFE3E3E3FFE1E1E1FFDCDCDCFFDBDBDBFFD7D7D7FFD3D3
+        D3FFD3D3D3FFD1D1D1FFFFFFFFFF9E9D9CFFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00A0A0A0FFFFFFFFFFADADADFF8E8E8EFFD8D8D8FFA5A5A5FF8A8A8AFFCECE
+        CEFF7374E8FF5258DBFFFBFBFBFF9E9E9EFFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00A3A3A3FFFCFCFCFFDADADAFFD7D7D7FFD2D2D2FFCECECEFFC9C9C9FFC5C5
+        C5FFC2C2C2FFBFBFBFFFFFFFFFFFA0A0A0FFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00A3A3A3FFFFFFFFFFB07B56FFC38D67FFC58F68FFC69069FFC8926BFFCA94
+        6CFFCA956EFFB07B56FFFFFFFFFFA1A09FFFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00A4A4A4FFFFFFFFFFB07B56FFC18B64FFC38D66FFC58F67FFC69069FFC892
+        6BFFCA946CFFB07B56FFFFFFFFFFA0A0A0FFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00A2A2A2FBFFFFFFFEA7724DFFA7724DFFA7724DFFA7724DFFA7724DFFA772
+        4DFFA7724DFFA7724DFFFFFFFFFF9E9E9EFFFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00979797D1FFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFF9999999E6FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF007272728A9E9E9EE3A8A8A8FFABABABFFACACACFFADADADFFACACACFFABAB
+        ABFFA8A8A8FFA4A4A4FF9B9B9BEB7E7E7E92FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      OnClick = BSimpanClick
+      TabOrder = 1
+    end
+  end
+  object PTengah: TPanel
+    Left = 0
+    Height = 272
+    Top = 50
+    Width = 656
+    Align = alClient
+    BevelOuter = bvLowered
+    ClientHeight = 272
+    ClientWidth = 656
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 192
+      Height = 15
+      Top = 16
+      Width = 32
+      Caption = 'DAPIL'
+      ParentColor = False
+    end
+    object EJmlKursi: TEdit
+      Left = 320
+      Height = 23
+      Top = 48
+      Width = 80
+      OnKeyPress = EJmlKursiKeyPress
+      TabOrder = 1
+      Text = 'EJmlKursi'
+    end
+    object CBDapil: TComboBox
+      Left = 320
+      Height = 23
+      Top = 16
+      Width = 152
+      ItemHeight = 15
+      Items.Strings = (
+        'DPR RI'
+        'DPRD Provinsi'
+        'DPRD Kabupaten/Kota'
+      )
+      OnKeyPress = CBDapilKeyPress
+      TabOrder = 0
+      Text = '-Pilih-'
+    end
+    object LKabKotaProv: TLabel
+      Left = 192
+      Height = 15
+      Top = 48
+      Width = 67
+      Caption = 'Jumlah Kursi'
+      ParentColor = False
+    end
+    object GridSainte: TRxDBGrid
+      Left = 1
+      Height = 183
+      Top = 88
+      Width = 654
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      Columns = <      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'No'
+          FieldName = 'id'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Dapil'
+          FieldName = 'nama_dapil'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Kursi Ke'
+          FieldName = 'kursike'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Partai'
+          FieldName = 'nama_partai'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Nama Caleg'
+          FieldName = 'nama_caleg'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Suara Caleg'
+          FieldName = 'suaracaleg'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Hasil Bagi'
+          FieldName = 'hasilbagi'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end>
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.DrawFullLine = True
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+      Align = alBottom
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      Color = clWindow
+      DrawFullLine = True
+      FocusColor = clRed
+      SelectedColor = clHighlight
+      GridLineStyle = psSolid
+      DataSource = DM.DKursi
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      TabOrder = 2
+      TitleStyle = tsNative
+      OnPrepareCanvas = GridSaintePrepareCanvas
+    end
+  end
+end

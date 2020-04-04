@@ -1,0 +1,651 @@
+object FHakAkses: TFHakAkses
+  Left = 524
+  Height = 343
+  Top = 163
+  Width = 432
+  BorderIcons = [biSystemMenu]
+  Caption = 'FHakAkses'
+  ClientHeight = 343
+  ClientWidth = 432
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object PAtas: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 432
+    Align = alTop
+    BevelOuter = bvLowered
+    Caption = 'Form Hak Akses Pengguna'
+    Font.Height = -17
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PBawah: TPanel
+    Left = 0
+    Height = 50
+    Top = 293
+    Width = 432
+    Align = alBottom
+    BevelOuter = bvLowered
+    ClientHeight = 50
+    ClientWidth = 432
+    TabOrder = 1
+    object BSimpan: TBitBtn
+      Left = 176
+      Height = 30
+      Top = 8
+      Width = 83
+      Caption = 'Simpan'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000BA6A368FB969
+        35B5B86935EEB76835FFB56835FFB46734FFB26634FFB06533FFAE6433FFAC63
+        32FFAA6232FFA96132FFA86031FFA76031FEA66031F1A86131C4BA6A35DEEBC6
+        ADFFEAC5ADFFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFB
+        F8FFFEFBF8FFFEFBF8FFFEFBF8FFC89A7CFFC79879FFA76031EDBA6B37FEEDCA
+        B3FFE0A27AFFFEFAF7FF62C088FF62C088FF62C088FF62C088FF62C088FF62C0
+        88FF62C088FF62C088FFFDF9F6FFCA8D65FFC99B7CFFA76031FEBB6C38FFEECC
+        B6FFE1A27AFFFEFAF7FFBFDCC2FFBFDCC2FFBFDCC2FFBFDCC2FFBFDCC2FFBFDC
+        C2FFBFDCC2FFBFDCC2FFFDF9F6FFCD9068FFCC9E81FFA86132FFBB6B38FFEFCE
+        B8FFE1A279FFFEFAF7FF62C088FF62C088FF62C088FF62C088FF62C088FF62C0
+        88FF62C088FF62C088FFFDF9F6FFCF936AFFCEA384FFAA6132FFBA6A36FFEFD0
+        BBFFE2A27AFFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFB
+        F8FFFEFBF8FFFEFBF8FFFEFBF8FFD3966DFFD2A78AFFAB6232FFBB6A36FFF0D2
+        BEFFE2A37AFFE2A37AFFE1A37AFFE2A37BFFE1A37BFFE0A178FFDE9F77FFDD9F
+        76FFDC9D74FFD99B72FFD89971FFD69970FFD5AB8EFFAD6333FFBB6A36FFF2D5
+        C2FFE3A37AFFE3A37AFFE2A37BFFE2A37BFFE2A47BFFE1A279FFE0A178FFDEA0
+        77FFDE9E75FFDC9D74FFDA9B73FFD99B73FFDAB095FFAF6433FFBB6A36FFF2D8
+        C5FFE3A47BFFE3A37AFFE3A47AFFE2A47BFFE2A37BFFE1A37BFFE1A279FFDFA0
+        77FFDE9F76FFDD9E74FFDB9C72FFDC9D74FFDDB59AFFB16534FFBB6B36FFF4D9
+        C7FFE6A67DFFC88C64FFC98D65FFC98E67FFCB926CFFCB926DFFCA9069FFC88C
+        65FFC88C64FFC88C64FFC88C64FFDA9C74FFE1BA9FFFB36634FFBB6B36FEF4DC
+        C9FFE7A77DFFF9ECE1FFF9ECE1FFF9EDE3FFFCF4EEFFFDFAF7FFFDF7F3FFFAED
+        E5FFF7E7DBFFF7E5D9FFF6E5D8FFDEA077FFE4BEA4FFB46734FFBC6B36FAF5DD
+        CCFFE7A87EFFFAF0E8FFFAF0E8FFC98D66FFFAF0E9FFFDF8F3FFFEFAF8FFFCF4
+        EFFFF9E9DFFFF7E7DBFFF7E5D9FFE0A278FFE7C2A9FFB66835FFBC6B36F0F6DF
+        D0FFE8A87EFFFCF6F1FFFCF6F1FFC88C64FFFAF1E9FFFBF4EEFFFDFAF7FFFDF9
+        F6FFFAF0E8FFF8E8DDFFF7E6DBFFE1A37AFFEFD5C3FFB76935FEBC6B36D8F6DF
+        D1FFE9AA80FFFEFAF6FFFDFAF6FFC88C64FFFBF3EEFFFBF1EAFFFCF6F2FFFEFB
+        F8FFFCF6F1FFF9ECE2FFF8E7DBFFEED0BAFFECD0BDFFBB703EF8BC6B369BF6E0
+        D1FFF7E0D1FFFEFBF8FFFEFBF7FFFDF9F6FFFCF5F0FFFAF0EAFFFBF2EDFFFDF9
+        F6FFFDFAF7FFFBF1EBFFF8E9DFFEECD0BDFBC9895EECB5693563BC6B3671BC6B
+        3690BC6B36CCBC6B36EEBC6B36FABB6B36FEBB6B36FFBB6A36FFBB6A36FFBC6C
+        39FFBD6E3BFFBB6D3AFFBB6B38EFBB703ECBB6693554FFFFFF00
+      }
+      OnClick = BSimpanClick
+      TabOrder = 0
+    end
+  end
+  object PTengah: TPanel
+    Left = 0
+    Height = 209
+    Top = 84
+    Width = 432
+    Align = alClient
+    BevelOuter = bvLowered
+    ClientHeight = 209
+    ClientWidth = 432
+    TabOrder = 2
+    object PageAkses: TPageControl
+      Left = 1
+      Height = 207
+      Top = 1
+      Width = 430
+      ActivePage = Bantuan
+      Align = alClient
+      TabIndex = 7
+      TabOrder = 0
+      object DataMaster: TTabSheet
+        Caption = 'Data Master'
+        ClientHeight = 179
+        ClientWidth = 422
+        object dm_capres: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 62
+          Caption = 'CAPRES'
+          TabOrder = 0
+        end
+        object dm_dprdprov: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 95
+          Caption = 'DPRD Provinsi'
+          TabOrder = 1
+        end
+        object dm_kab: TCheckBox
+          Left = 224
+          Height = 19
+          Top = 8
+          Width = 77
+          Caption = 'Kabupaten'
+          TabOrder = 2
+        end
+        object dm_dapil: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 8
+          Width = 52
+          Caption = 'DAPIL'
+          TabOrder = 3
+        end
+        object dm_dapilri: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 36
+          Width = 65
+          Caption = 'DAPIL RI'
+          TabOrder = 4
+        end
+        object dm_kec: TCheckBox
+          Left = 224
+          Height = 19
+          Top = 36
+          Width = 79
+          Caption = 'Kecamatan'
+          TabOrder = 5
+        end
+        object dm_dprdkab: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 36
+          Width = 102
+          Caption = 'DPRD Kab/Kota'
+          TabOrder = 6
+        end
+        object dm_cagub: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 36
+          Width = 59
+          Caption = 'CAGUB'
+          TabOrder = 7
+        end
+        object dm_dapilkab: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 92
+          Width = 104
+          Caption = 'DAPIL Kab/Kota'
+          TabOrder = 8
+        end
+        object dm_dapilprov: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 64
+          Width = 97
+          Caption = 'DAPIL Provinsi'
+          TabOrder = 9
+        end
+        object dm_kel: TCheckBox
+          Left = 224
+          Height = 19
+          Top = 64
+          Width = 73
+          Caption = 'Kelurahan'
+          TabOrder = 10
+        end
+        object dm_tps: TCheckBox
+          Left = 224
+          Height = 19
+          Top = 92
+          Width = 40
+          Caption = 'TPS'
+          TabOrder = 11
+        end
+        object dm_prov: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 92
+          Width = 62
+          Caption = 'Provinsi'
+          TabOrder = 12
+        end
+        object dm_partai: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 64
+          Width = 50
+          Caption = 'Partai'
+          TabOrder = 13
+        end
+        object dm_cabup: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 64
+          Width = 58
+          Caption = 'CABUP'
+          TabOrder = 14
+        end
+        object dm_dpd: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 92
+          Width = 56
+          Caption = 'DPD RI'
+          TabOrder = 15
+        end
+        object dm_dpr: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 120
+          Width = 55
+          Caption = 'DPR RI'
+          TabOrder = 16
+        end
+        object LID: TLabel
+          Left = 256
+          Height = 15
+          Top = 112
+          Width = 17
+          Caption = 'LID'
+          ParentColor = False
+          Visible = False
+        end
+        object dm_kades: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 149
+          Width = 55
+          Caption = 'KADES'
+          TabOrder = 17
+        end
+      end
+      object DataKampanye: TTabSheet
+        Caption = 'Data Kampanye'
+        ClientHeight = 179
+        ClientWidth = 422
+        object dk_timses: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 59
+          Caption = 'TIMSES'
+          TabOrder = 0
+        end
+        object dk_usulantimses: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 71
+          Caption = 'Koor. TPS'
+          TabOrder = 1
+        end
+        object dk_polling: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 8
+          Width = 57
+          Caption = 'Polling'
+          TabOrder = 2
+        end
+        object dk_usulsaran: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 8
+          Width = 75
+          Caption = 'Usul Saran'
+          TabOrder = 3
+        end
+        object dk_saksi: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 36
+          Width = 46
+          Caption = 'Saksi'
+          TabOrder = 4
+        end
+        object dk_dukungindependen: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 36
+          Width = 141
+          Caption = 'Dukungan Independen'
+          TabOrder = 5
+        end
+        object dk_dpt: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 36
+          Width = 42
+          Caption = 'DPT'
+          TabOrder = 6
+        end
+        object dk_petasuara: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 64
+          Width = 75
+          Caption = 'Peta Suara'
+          TabOrder = 7
+        end
+        object dk_gpeta: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 64
+          Width = 109
+          Caption = 'Grafik Peta Suara'
+          TabOrder = 8
+        end
+      end
+      object DataPerhitungan: TTabSheet
+        Caption = 'Data Perhitungan'
+        ClientHeight = 179
+        ClientWidth = 422
+        object dp_dpd: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 8
+          Width = 56
+          Caption = 'DPD RI'
+          TabOrder = 0
+        end
+        object dp_dprdprov: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 8
+          Width = 95
+          Caption = 'DPRD Provinsi'
+          TabOrder = 1
+        end
+        object dp_dprdkab: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 36
+          Width = 102
+          Caption = 'DPRD Kab/Kota'
+          TabOrder = 2
+        end
+        object dp_dpr: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 36
+          Width = 55
+          Caption = 'DPR RI'
+          TabOrder = 3
+        end
+        object dp_partai: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 36
+          Width = 50
+          Caption = 'Partai'
+          TabOrder = 4
+        end
+        object dp_cabup: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 58
+          Caption = 'CABUP'
+          TabOrder = 5
+        end
+        object dp_capres: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 62
+          Caption = 'CAPRES'
+          TabOrder = 6
+        end
+        object dp_cagub: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 36
+          Width = 59
+          Caption = 'CAGUB'
+          TabOrder = 7
+        end
+        object dp_kades: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 64
+          Width = 71
+          Caption = 'CAKADES'
+          TabOrder = 8
+        end
+      end
+      object GrafikPerhitungan: TTabSheet
+        Caption = 'Grafik Perhitungan'
+        ClientHeight = 179
+        ClientWidth = 422
+        object gf_dpd: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 8
+          Width = 56
+          Caption = 'DPD RI'
+          TabOrder = 0
+        end
+        object gf_dprdprov: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 8
+          Width = 95
+          Caption = 'DPRD Provinsi'
+          TabOrder = 1
+        end
+        object gf_dprdkab: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 36
+          Width = 102
+          Caption = 'DPRD Kab/Kota'
+          TabOrder = 2
+        end
+        object gf_dpr: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 36
+          Width = 55
+          Caption = 'DPR RI'
+          TabOrder = 3
+        end
+        object gf_partai: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 36
+          Width = 50
+          Caption = 'Partai'
+          TabOrder = 4
+        end
+        object gf_cabup: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 58
+          Caption = 'CABUP'
+          TabOrder = 5
+        end
+        object gf_capres: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 62
+          Caption = 'CAPRES'
+          TabOrder = 6
+        end
+        object gf_cagub: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 36
+          Width = 59
+          Caption = 'CAGUB'
+          TabOrder = 7
+        end
+        object gf_kades: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 64
+          Width = 71
+          Caption = 'CAKADES'
+          TabOrder = 8
+        end
+      end
+      object ModulSMS: TTabSheet
+        Caption = 'Modul SMS'
+        ClientHeight = 179
+        ClientWidth = 422
+        object ms_smsmasuk: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 8
+          Width = 81
+          Caption = 'SMS Masuk'
+          TabOrder = 0
+        end
+        object ms_smsterkirim: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 8
+          Width = 90
+          Caption = 'SMS Terkirim'
+          TabOrder = 1
+        end
+        object ms_kirimsms: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 74
+          Caption = 'Kirim SMS'
+          TabOrder = 2
+        end
+        object ms_modem: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 62
+          Caption = 'Modem'
+          TabOrder = 3
+        end
+      end
+      object ModulTelegram: TTabSheet
+        Caption = 'Modul Telegram'
+        ClientHeight = 179
+        ClientWidth = 422
+        object mt_bot: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 77
+          Caption = 'Bot Engine'
+          TabOrder = 0
+        end
+        object mt_kirimpesan: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 82
+          Caption = 'Kirim Pesan'
+          TabOrder = 1
+        end
+        object mt_chatmasuk: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 8
+          Width = 83
+          Caption = 'Chat Masuk'
+          TabOrder = 2
+        end
+        object mt_chatterkirim: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 8
+          Width = 92
+          Caption = 'Chat Terkirim'
+          TabOrder = 3
+        end
+      end
+      object Pengaturan: TTabSheet
+        Caption = 'Pengaturan'
+        ClientHeight = 179
+        ClientWidth = 422
+        object pg_pengguna: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 74
+          Caption = 'Pengguna'
+          TabOrder = 0
+        end
+        object pg_pengaturan: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 81
+          Caption = 'Pengaturan'
+          TabOrder = 1
+        end
+        object pg_backup: TCheckBox
+          Left = 210
+          Height = 19
+          Top = 8
+          Width = 59
+          Caption = 'Backup'
+          TabOrder = 2
+        end
+        object pg_restore: TCheckBox
+          Left = 312
+          Height = 19
+          Top = 8
+          Width = 59
+          Caption = 'Restore'
+          TabOrder = 3
+        end
+        object pg_format: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 36
+          Width = 135
+          Caption = 'Format SMS dan Chat'
+          TabOrder = 4
+        end
+        object pg_identitas: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 36
+          Width = 65
+          Caption = 'Identitas'
+          TabOrder = 5
+        end
+      end
+      object Bantuan: TTabSheet
+        Caption = 'Bantuan'
+        ClientHeight = 179
+        ClientWidth = 422
+        object bn_bantuan: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 8
+          Width = 64
+          Caption = 'Bantuan'
+          TabOrder = 0
+        end
+        object bn_update: TCheckBox
+          Left = 110
+          Height = 19
+          Top = 8
+          Width = 58
+          Caption = 'Update'
+          TabOrder = 1
+          Visible = False
+        end
+      end
+    end
+  end
+  object PAtasNama: TPanel
+    Left = 0
+    Height = 34
+    Top = 50
+    Width = 432
+    Align = alTop
+    BevelOuter = bvLowered
+    Caption = 'Form Hak Akses Pengguna'
+    Font.Height = -15
+    ParentFont = False
+    TabOrder = 3
+  end
+end

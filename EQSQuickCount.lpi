@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="EQSQuickCount"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <MajorVersionNr Value="2"/>
+      <MinorVersionNr Value="81"/>
+      <StringTable Comments="EQS Quick Count" CompanyName="EQS Quick Count" FileDescription="Elections Quick Count System" InternalName="EQS Quick Count" OriginalFilename="EQS Quick Count" ProductName="Elections Quick Count System" ProductVersion="2.81.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="13">
+      <Item1>
+        <PackageName Value="dcpcrypt"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="Abbrevia"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="Printer4Lazarus"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="lazreport"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="TAChartLazarusPkg"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="virtualtreeview_package"/>
+      </Item7>
+      <Item8>
+        <PackageName Value="rxnew"/>
+      </Item8>
+      <Item9>
+        <PackageName Value="laz_fpspreadsheet_visual"/>
+      </Item9>
+      <Item10>
+        <PackageName Value="FCL"/>
+      </Item10>
+      <Item11>
+        <PackageName Value="zcomponent"/>
+      </Item11>
+      <Item12>
+        <PackageName Value="SpkToolbarPackage"/>
+      </Item12>
+      <Item13>
+        <PackageName Value="LCL"/>
+      </Item13>
+    </RequiredPackages>
+    <Units Count="108">
+      <Unit0>
+        <Filename Value="EQSQuickCount.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uutama.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUtama"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UUtama"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="upartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="udatamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="utambahpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="uprovinsi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="utambahprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="ukabupatenkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKabupatenKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="utambahkabupatenkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKabupatenKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="ukecamatan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKecamatan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="ukelurahandesa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKelurahanDesa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="utps.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTps"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="utambahkecamatan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKecamatan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="utambahkelurahandesa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKelurahanDesa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="utambahtps.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahTPS"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="ucapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="ucagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="utambahcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="utambahcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="utambahcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="udapilkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDapilKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="udapilprovinsi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDapilProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="udapilri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDapilRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="ucalegdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="ucalegdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="ucalegdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="ucalegkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="ucabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="utambahdapilri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapilRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="utambahdapilprovinsi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapilProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="utambahdapilkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapilKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="utambahcalegdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="utambahcalegdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="utambahcalegdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegDPRDProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="utambahcalegdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="utimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTIMSES"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="usaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="uusulantimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUsulanTIMSES"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="udukunganindependen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDukunganIndependen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="upolling.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPolling"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="uusulsaran.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUsulSaran"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="utambahtimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahTimses"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="utambahsaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahSaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="utambahusulantimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahUsulanTimses"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="ukirimsms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKirimSMS"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="uchat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FChat"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="uhitungcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="uubahhitungcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="uhitungcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="uhitungcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="uhitungpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="uhitungdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="uhitungdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="uhitungdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="uhitungdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPRDKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="uubahhitungcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="uubahhitungcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="uubahhitungpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="uubahhitungdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="uubahhitungdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="uubahhitungdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="uubahhitungdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPRDKab"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="udapil.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataDAPIL"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="utambahdapil.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapil"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="ugrafikcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="ugrafikcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="ugrafikcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="ugrafikpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="ugrafikdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="ugrafikdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="ugrafikdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="ugrafikdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPRDKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="udatasmsmasuk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataSMSMasuk"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="udatasmsterkirim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataSMSTerkirim"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="udatachatmasuk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataChatMasuk"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="udatachatterkirim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataChatTerkirim"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="udatapengguna.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataPengguna"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="udataformatsmschat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataFormatSMSChat"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="ukirimchat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKirimChat"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="usms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSMS"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="ufilter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FFilter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="upengaturan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPengaturan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="uidentitas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FIdentitas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="utambahpengguna.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahPengguna"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="uhakakses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHakAkses"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="uregister.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FRegister"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="usmsprocess.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="uchatprocess.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="ulogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="ucekserial.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="uresetdb.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="utambahdukunganindie.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDukunganIndependen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="udatasmsbalasan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataSMSBalasan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UdataSMSBalasan"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="uubahbalasan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahBalasan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="ucakades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalonKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="uhitungkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="ugrafikkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="uubahhitungkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="utambahkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="upetasuara.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPetaSuara"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="utambahpetasuara.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahPetaSuara"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="udatadpt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataDPT"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="utambahdpt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDPT"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="ugrafikpeta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="upilihpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPilihPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="usaintelague.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSainteLague"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="ufilterpeta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FFilterPeta"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="ufilterhitung.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FFilterHitung"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit107>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="EQSQuickCount"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

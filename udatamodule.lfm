@@ -1,0 +1,1633 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 520
+  HorizontalOffset = 141
+  VerticalOffset = 110
+  Width = 1272
+  PPI = 96
+  object KoneksiDatabase: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    ClientCodepage = 'win1250'
+    Properties.Strings = (
+      'timeout=5'
+      'codepage=win1250'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3310
+    Database = 'eqsquickcount'
+    User = 'root'
+    Password = 'eqs!123Ab'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\EQSQuickCount\libmysql.dll'
+    left = 48
+    top = 8
+  end
+  object ZQPartai: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_partai order by no_urut asc'
+    )
+    Params = <>
+    left = 24
+    top = 65
+  end
+  object DPartai: TDataSource
+    DataSet = ZQPartai
+    left = 24
+    top = 124
+  end
+  object ZQCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 144
+    top = 8
+  end
+  object ZQProv: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_provinsi order by id_provinsi asc'
+    )
+    Params = <>
+    left = 88
+    top = 65
+  end
+  object DProv: TDataSource
+    DataSet = ZQProv
+    left = 88
+    top = 124
+  end
+  object DKabKota: TDataSource
+    DataSet = ZQKabKota
+    left = 152
+    top = 124
+  end
+  object ZQKabKota: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_kabkota.id_kota, t_provinsi.nama_provinsi, t_kabkota.nama_kota FROM (t_kabkota INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi) order by t_kabkota.id_kota asc'
+    )
+    Params = <>
+    left = 152
+    top = 65
+  end
+  object DKec: TDataSource
+    DataSet = ZQKec
+    left = 208
+    top = 124
+  end
+  object DKelDesa: TDataSource
+    DataSet = ZQKelDesa
+    left = 264
+    top = 124
+  end
+  object DTPS: TDataSource
+    DataSet = ZQTPS
+    left = 320
+    top = 124
+  end
+  object ZQKec: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_kecamatan.id_kecamatan, t_kecamatan.nama_kecamatan, t_kabkota.nama_kota, t_provinsi.nama_provinsi FROM ((t_kecamatan INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi) order by t_kecamatan.id_kecamatan asc'
+    )
+    Params = <>
+    left = 208
+    top = 65
+  end
+  object ZQKelDesa: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_kelurahan.id_kelurahan, t_kelurahan.nama_kelurahan, t_kecamatan.nama_kecamatan, t_kabkota.nama_kota, t_provinsi.nama_provinsi FROM (((t_kelurahan INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi) order by t_kelurahan.id_kelurahan asc'
+    )
+    Params = <>
+    left = 264
+    top = 65
+  end
+  object ZQTPS: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_tps.id_tps, t_tps.no_tps, t_kelurahan.nama_kelurahan, t_kecamatan.nama_kecamatan, t_kabkota.nama_kota, t_provinsi.nama_provinsi FROM ((((t_tps INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi) order by t_tps.id_tps asc'
+    )
+    Params = <>
+    left = 320
+    top = 65
+  end
+  object DCapres: TDataSource
+    DataSet = ZQCapres
+    left = 376
+    top = 124
+  end
+  object DCagub: TDataSource
+    DataSet = ZQCagub
+    left = 432
+    top = 124
+  end
+  object DCabupKota: TDataSource
+    DataSet = ZQCabupKota
+    left = 496
+    top = 124
+  end
+  object DDPDRI: TDataSource
+    DataSet = ZQDPDRI
+    left = 24
+    top = 234
+  end
+  object ZQCapres: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_capres order by no_urut asc'
+    )
+    Params = <>
+    left = 376
+    top = 65
+  end
+  object ZQCagub: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_cagub.no_urut, t_cagub.nama_cagub, t_cagub.nama_cawagub, t_cagub.nama_akronim, t_provinsi.nama_provinsi, t_cagub.foto, t_cagub.warna FROM (t_cagub INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_cagub.daerah) order by t_cagub.no_urut asc'
+    )
+    Params = <>
+    left = 432
+    top = 65
+  end
+  object ZQCabupKota: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_cabupkota.no_urut, t_cabupkota.nama_cabup, t_cabupkota.nama_cawabup, t_cabupkota.nama_akronim, t_kabkota.nama_kota, t_cabupkota.foto, t_cabupkota.warna FROM (t_cabupkota INNER JOIN t_kabkota ON t_kabkota.id_kota=t_cabupkota.daerah) order by t_cabupkota.no_urut asc'
+    )
+    Params = <>
+    left = 496
+    top = 65
+  end
+  object ZQDPDRI: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdpdri.no_urut, t_calegdpdri.nama_caleg, t_provinsi.nama_provinsi, t_calegdpdri.foto, t_calegdpdri.warna, t_calegdpdri.dapil FROM (t_calegdpdri INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_calegdpdri.dapil) order by t_calegdpdri.no_urut asc'
+    )
+    Params = <>
+    left = 24
+    top = 180
+  end
+  object ZQDAPILRI: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_dapilri.id, t_dapil.nama_dapil, t_kabkota.nama_kota FROM ((t_dapilri INNER JOIN t_dapil ON t_dapil.id_dapil=t_dapilri.id_dapil) INNER JOIN t_kabkota ON t_kabkota.id_kota=t_dapilri.kabkota) order by t_dapilri.id asc'
+    )
+    Params = <>
+    left = 568
+    top = 65
+  end
+  object ZQDAPILProv: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_dapilprovinsi.id, t_dapil.nama_dapil, t_kabkota.nama_kota FROM ((t_dapilprovinsi INNER JOIN t_dapil ON t_dapil.id_dapil=t_dapilprovinsi.id_dapil) INNER JOIN t_kabkota ON t_kabkota.id_kota=t_dapilprovinsi.kabkota) order by t_dapilprovinsi.id asc'
+    )
+    Params = <>
+    left = 640
+    top = 65
+  end
+  object ZQDAPILKabKota: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_dapilkabkota.id, t_dapil.nama_dapil, t_kecamatan.nama_kecamatan FROM ((t_dapilkabkota INNER JOIN t_dapil ON t_dapil.id_dapil=t_dapilkabkota.id_dapil) INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_dapilkabkota.kecamatan) order by t_dapilkabkota.id asc'
+    )
+    Params = <>
+    left = 728
+    top = 65
+  end
+  object DDAPILRI: TDataSource
+    DataSet = ZQDAPILRI
+    left = 568
+    top = 124
+  end
+  object DDAPILProv: TDataSource
+    DataSet = ZQDAPILProv
+    left = 640
+    top = 124
+  end
+  object DDAPILKabKota: TDataSource
+    DataSet = ZQDAPILKabKota
+    left = 728
+    top = 124
+  end
+  object DDPRRI: TDataSource
+    DataSet = ZQDPRRI
+    left = 96
+    top = 234
+  end
+  object DDPRDProv: TDataSource
+    DataSet = ZQDPRDProv
+    left = 168
+    top = 234
+  end
+  object DDPRDKab: TDataSource
+    DataSet = ZQDPRDKab
+    left = 240
+    top = 234
+  end
+  object ZQDPRRI: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprri.id, t_calegdprri.no_urut, t_calegdprri.nama_caleg, t_partai.nama_partai, t_dapil.nama_dapil, t_calegdprri.foto, t_calegdprri.warna, t_calegdprri.dapil FROM ((t_calegdprri INNER JOIN t_dapil ON t_calegdprri.dapil=t_dapil.id_dapil) INNER JOIN t_partai ON t_partai.no_urut=t_calegdprri.partai) order by t_calegdprri.id asc'
+    )
+    Params = <>
+    left = 96
+    top = 180
+  end
+  object ZQDPRDProv: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprdprov.id, t_calegdprdprov.no_urut, t_calegdprdprov.nama_caleg, t_provinsi.nama_provinsi, t_partai.nama_partai, t_dapil.nama_dapil, t_calegdprdprov.foto, t_calegdprdprov.warna, t_calegdprdprov.dapil FROM (((t_calegdprdprov INNER JOIN t_dapil ON t_calegdprdprov.dapil=t_dapil.id_dapil) INNER JOIN t_partai ON t_partai.no_urut=t_calegdprdprov.partai) INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_calegdprdprov.prov) order by t_calegdprdprov.id asc'
+    )
+    Params = <>
+    left = 168
+    top = 180
+  end
+  object ZQDPRDKab: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprdkabkota.id, t_calegdprdkabkota.no_urut, t_calegdprdkabkota.nama_caleg, t_kabkota.nama_kota, t_partai.nama_partai, t_dapil.nama_dapil, t_calegdprdkabkota.foto, t_calegdprdkabkota.warna, t_calegdprdkabkota.dapil FROM (((t_calegdprdkabkota INNER JOIN t_dapil ON t_calegdprdkabkota.dapil=t_dapil.id_dapil) INNER JOIN t_partai ON t_partai.no_urut=t_calegdprdkabkota.partai) INNER JOIN t_kabkota ON t_kabkota.id_kota=t_calegdprdkabkota.kabkota)  order by t_calegdprdkabkota.id asc'
+    )
+    Params = <>
+    left = 240
+    top = 180
+  end
+  object DTimses: TDataSource
+    DataSet = ZQTimses
+    left = 320
+    top = 234
+  end
+  object DSaksi: TDataSource
+    DataSet = ZQSaksi
+    left = 376
+    top = 234
+  end
+  object DUsulTimses: TDataSource
+    DataSet = ZQUsulTimses
+    left = 448
+    top = 234
+  end
+  object DDukIndie: TDataSource
+    DataSet = ZQDukIndie
+    left = 520
+    top = 234
+  end
+  object DPolling: TDataSource
+    DataSet = ZQPolling
+    left = 592
+    top = 234
+  end
+  object DUsulSaran: TDataSource
+    DataSet = ZQUsulSaran
+    left = 656
+    top = 234
+  end
+  object ZQTimses: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_timses.id_timses, t_timses.nama_timses, t_kelurahan.nama_kelurahan, t_timses.nohp, t_timses.id_telegram FROM (t_timses INNER JOIN t_kelurahan ON t_timses.desa_kelurahan=t_kelurahan.id_kelurahan) order by t_timses.id_timses asc'
+    )
+    Params = <>
+    left = 320
+    top = 180
+  end
+  object ZQSaksi: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_saksi.id_saksi, t_saksi.nama_saksi, t_kelurahan.nama_kelurahan, t_tps.no_tps, t_saksi.nohp, t_saksi.id_telegram FROM ((t_saksi INNER JOIN t_kelurahan ON t_saksi.desa_kelurahan=t_kelurahan.id_kelurahan) INNER JOIN t_tps ON t_tps.id_tps=t_saksi.tps) order by t_saksi.id_saksi asc'
+    )
+    Params = <>
+    left = 376
+    top = 180
+  end
+  object ZQUsulTimses: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_usulantimses.id_usulan,  t_usulantimses.nama, t_kelurahan.nama_kelurahan, t_usulantimses.nohp, t_usulantimses.idchat, t_usulantimses.idtelegram FROM (t_usulantimses INNER JOIN t_kelurahan ON t_usulantimses.desa_kelurahan=t_kelurahan.id_kelurahan) order by t_usulantimses.id_usulan asc'
+    )
+    Params = <>
+    left = 448
+    top = 180
+  end
+  object ZQDukIndie: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_dukunganindie.id_dukung, t_dukunganindie.noktp, t_dukunganindie.nama, t_kelurahan.nama_kelurahan, t_dukunganindie.nohp, t_dukunganindie.idtelegram, t_dukunganindie.idchat FROM (t_dukunganindie INNER JOIN t_kelurahan ON t_dukunganindie.desa_kelurahan=t_kelurahan.id_kelurahan) order by t_dukunganindie.id_dukung asc'
+    )
+    Params = <>
+    left = 520
+    top = 180
+  end
+  object ZQPolling: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_polling.id_polling, t_polling.nama, t_kelurahan.nama_kelurahan, t_polling.nohp, t_polling.idtelegram, t_polling.idchat, t_polling.pekerjaan FROM (t_polling INNER JOIN t_kelurahan ON t_polling.desa_kelurahan=t_kelurahan.id_kelurahan) order by t_polling.id_polling asc'
+    )
+    Params = <>
+    left = 590
+    top = 180
+  end
+  object ZQUsulSaran: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_usulsaran.id_usul, t_usulsaran.nama, t_kelurahan.nama_kelurahan, t_usulsaran.nohp, t_usulsaran.idtelegram, t_usulsaran.idchat, t_usulsaran.pekerjaan, t_usulsaran.usulan FROM (t_usulsaran INNER JOIN t_kelurahan ON t_usulsaran.desa_kelurahan=t_kelurahan.id_kelurahan) order by t_usulsaran.id_usul asc'
+    )
+    Params = <>
+    left = 656
+    top = 180
+    object ZQUsulSaranid_usul: TLongintField
+      FieldKind = fkData
+      FieldName = 'id_usul'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object ZQUsulSarannama: TStringField
+      FieldKind = fkData
+      FieldName = 'nama'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 200
+    end
+    object ZQUsulSarannama_kelurahan: TStringField
+      FieldKind = fkData
+      FieldName = 'nama_kelurahan'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 400
+    end
+    object ZQUsulSarannohp: TStringField
+      FieldKind = fkData
+      FieldName = 'nohp'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 100
+    end
+    object ZQUsulSaranidtelegram: TStringField
+      FieldKind = fkData
+      FieldName = 'idtelegram'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 200
+    end
+    object ZQUsulSaranidchat: TStringField
+      FieldKind = fkData
+      FieldName = 'idchat'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 200
+    end
+    object ZQUsulSaranpekerjaan: TStringField
+      FieldKind = fkData
+      FieldName = 'pekerjaan'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 200
+    end
+    object ZQUsulSaranusulan: TMemoField
+      FieldKind = fkData
+      FieldName = 'usulan'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      OnGetText = ZQUsulSaranusulanGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object ZQKirimSMS: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 207
+    top = 8
+  end
+  object ZQKirimChat: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 280
+    top = 8
+  end
+  object ZQKabCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 576
+    top = 290
+  end
+  object ZQKecCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 638
+    top = 290
+  end
+  object ZQKelCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 701
+    top = 290
+  end
+  object ZQTPSCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 765
+    top = 290
+  end
+  object ZQTotRoot: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 24
+    top = 291
+  end
+  object ZQTotProv: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 88
+    top = 291
+  end
+  object ZQTotKabKota: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 160
+    top = 290
+  end
+  object ZQTotKecamatan: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 256
+    top = 291
+  end
+  object ZQTotKelurahan: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 352
+    top = 291
+  end
+  object ZQTotTPS: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 432
+    top = 290
+  end
+  object ZQHitungCapres: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 368
+    top = 8
+  end
+  object ZQHitungCagub: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 464
+    top = 8
+  end
+  object ZQHitungCabupKota: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 568
+    top = 8
+  end
+  object ZQHitungPartai: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 672
+    top = 8
+  end
+  object ZQProvCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 504
+    top = 290
+  end
+  object ZQHitungDPDRI: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 765
+    top = 8
+  end
+  object ZQHitungDPRRI: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 856
+    top = 8
+  end
+  object ZQHitungDPRDProv: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 840
+    top = 240
+  end
+  object ZQHitungDPRDKab: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 744
+    top = 240
+  end
+  object ZQDapilCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 808
+    top = 180
+  end
+  object ZQTotDapil: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 736
+    top = 180
+  end
+  object ZQDapil: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_dapil order by id_dapil asc'
+    )
+    Params = <>
+    left = 800
+    top = 65
+  end
+  object DDapil: TDataSource
+    DataSet = ZQDapil
+    left = 800
+    top = 123
+  end
+  object ZQCari2: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 867
+    top = 68
+  end
+  object ZQCari3: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 868
+    top = 124
+  end
+  object ZQGrafikCapres: TZQuery
+    Connection = KoneksiDatabase
+    SQL.Strings = (
+      'SELECT sum(t_hitungcapres.perolehan) as suara FROM '
+      '((((((t_hitungcapres INNER JOIN t_capres ON t_capres.no_urut=t_hitungcapres.no_urut) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungcapres.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+    )
+    Params = <>
+    left = 32
+    top = 345
+  end
+  object ZQGrafikCagub: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 120
+    top = 345
+  end
+  object ZQGrafikCabup: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 200
+    top = 345
+  end
+  object ZQGrafikPartai: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 289
+    top = 345
+  end
+  object ZQGrafikDPDRI: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 377
+    top = 344
+  end
+  object ZQGrafikDPRRI: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 472
+    top = 345
+  end
+  object ZQGrafikDPRProv: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 552
+    top = 345
+  end
+  object ZQGrafikDPRKab: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 632
+    top = 345
+  end
+  object ZQModem: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_modem'
+    )
+    Params = <>
+    left = 552
+    top = 453
+  end
+  object ZQTelegramBot: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_telegrambot'
+    )
+    Params = <>
+    left = 632
+    top = 456
+  end
+  object ZQSMSTerkirim: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_outboxsms.id, t_outboxsms.tanggal, t_outboxsms.jam, t_modem.nama_modem, t_outboxsms.no_tujuan, t_outboxsms.isi_pesan, t_outboxsms.status FROM (t_outboxsms INNER JOIN t_modem ON t_modem.id=t_outboxsms.id_modem) order by t_outboxsms.id asc'
+    )
+    Params = <>
+    left = 32
+    top = 399
+    object ZQSMSTerkirimid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object ZQSMSTerkirimtanggal: TDateField
+      FieldKind = fkData
+      FieldName = 'tanggal'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      DisplayFormat = 'dd/mm/yyyy'
+    end
+    object ZQSMSTerkirimjam: TTimeField
+      FieldKind = fkData
+      FieldName = 'jam'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      DisplayFormat = 'hh:mm:ss'
+    end
+    object ZQSMSTerkirimnama_modem: TStringField
+      FieldKind = fkData
+      FieldName = 'nama_modem'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 200
+    end
+    object ZQSMSTerkirimno_tujuan: TStringField
+      FieldKind = fkData
+      FieldName = 'no_tujuan'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      OnGetText = ZQSMSTerkirimno_tujuanGetText
+      Size = 60
+    end
+    object ZQSMSTerkirimisi_pesan: TMemoField
+      FieldKind = fkData
+      FieldName = 'isi_pesan'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      OnGetText = ZQSMSTerkirimisi_pesanGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object ZQSMSTerkirimstatus: TStringField
+      FieldKind = fkData
+      FieldName = 'status'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 32
+    end
+  end
+  object ZQSMSMasuk: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_inboxsms.id, t_inboxsms.tanggal, t_inboxsms.jam, t_modem.nama_modem, t_inboxsms.no_pengirim, t_inboxsms.isi_pesan, t_inboxsms.processed FROM (t_inboxsms INNER JOIN t_modem ON t_modem.id=t_inboxsms.id_modem) order by t_inboxsms.id asc'
+    )
+    Params = <>
+    left = 120
+    top = 399
+    object ZQSMSMasukid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object ZQSMSMasuktanggal: TDateField
+      FieldKind = fkData
+      FieldName = 'tanggal'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      DisplayFormat = 'dd/mm/yyyy'
+    end
+    object ZQSMSMasukjam: TTimeField
+      FieldKind = fkData
+      FieldName = 'jam'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      DisplayFormat = 'hh:mm:ss'
+    end
+    object ZQSMSMasuknama_modem: TStringField
+      FieldKind = fkData
+      FieldName = 'nama_modem'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      Size = 200
+    end
+    object ZQSMSMasukno_pengirim: TStringField
+      FieldKind = fkData
+      FieldName = 'no_pengirim'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      OnGetText = ZQSMSMasukno_pengirimGetText
+      Size = 60
+    end
+    object ZQSMSMasukisi_pesan: TMemoField
+      FieldKind = fkData
+      FieldName = 'isi_pesan'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+      OnGetText = ZQSMSMasukisi_pesanGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object ZQSMSMasukprocessed: TStringField
+      FieldKind = fkData
+      FieldName = 'processed'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+  end
+  object ZQChatMasuk: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_inboxchat order by id asc'
+    )
+    Params = <>
+    left = 207
+    top = 399
+    object ZQChatMasukid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQChatMasuktanggal: TDateField
+      FieldKind = fkData
+      FieldName = 'tanggal'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      DisplayFormat = 'dd/mm/yyyy'
+    end
+    object ZQChatMasukjam: TTimeField
+      FieldKind = fkData
+      FieldName = 'jam'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      DisplayFormat = 'hh:mm:ss'
+    end
+    object ZQChatMasukid_chat: TLongintField
+      FieldKind = fkData
+      FieldName = 'id_chat'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQChatMasukid_pengirim: TStringField
+      FieldKind = fkData
+      FieldName = 'id_pengirim'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnGetText = ZQChatMasukid_pengirimGetText
+      Size = 200
+    end
+    object ZQChatMasukisi_pesan: TMemoField
+      FieldKind = fkData
+      FieldName = 'isi_pesan'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnGetText = ZQChatMasukisi_pesanGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object ZQChatMasukprocessed: TStringField
+      FieldKind = fkData
+      FieldName = 'processed'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+  end
+  object ZQChatTerkirim: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_outboxchat order by id asc'
+    )
+    Params = <>
+    left = 303
+    top = 399
+    object ZQChatTerkirimid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQChatTerkirimtanggal: TDateField
+      FieldKind = fkData
+      FieldName = 'tanggal'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      DisplayFormat = 'dd/mm/yyyy'
+    end
+    object ZQChatTerkirimjam: TTimeField
+      FieldKind = fkData
+      FieldName = 'jam'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      DisplayFormat = 'hh:mm:ss'
+    end
+    object ZQChatTerkirimisipesan: TMemoField
+      FieldKind = fkData
+      FieldName = 'isipesan'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnGetText = ZQChatTerkirimisipesanGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object ZQChatTerkirimid_chat: TLongintField
+      FieldKind = fkData
+      FieldName = 'id_chat'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQChatTerkirimid_tujuan: TStringField
+      FieldKind = fkData
+      FieldName = 'id_tujuan'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnGetText = ZQChatTerkirimid_tujuanGetText
+      Size = 200
+    end
+    object ZQChatTerkirimstatus: TStringField
+      FieldKind = fkData
+      FieldName = 'status'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 32
+    end
+  end
+  object ZQPengguna: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_pengguna order by id asc'
+    )
+    Params = <>
+    left = 391
+    top = 399
+    object ZQPenggunaid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQPenggunanama_lengkap: TStringField
+      FieldKind = fkData
+      FieldName = 'nama_lengkap'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 400
+    end
+    object ZQPenggunausername: TStringField
+      FieldKind = fkData
+      FieldName = 'username'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 200
+    end
+    object ZQPenggunapassword: TMemoField
+      FieldKind = fkData
+      FieldName = 'password'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnGetText = ZQPenggunapasswordGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object ZQPenggunano_hp: TStringField
+      FieldKind = fkData
+      FieldName = 'no_hp'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 60
+    end
+  end
+  object ZQFormat: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_format order by id asc'
+    )
+    Params = <>
+    left = 470
+    top = 399
+    object ZQFormatid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQFormatformat: TMemoField
+      FieldKind = fkData
+      FieldName = 'format'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnGetText = ZQFormatformatGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object ZQFormatketerangan: TMemoField
+      FieldKind = fkData
+      FieldName = 'keterangan'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      OnGetText = ZQFormatketeranganGetText
+      BlobType = ftMemo
+      Transliterate = False
+    end
+  end
+  object DSMSTerkirim: TDataSource
+    DataSet = ZQSMSTerkirim
+    left = 32
+    top = 453
+  end
+  object DSMSMasuk: TDataSource
+    DataSet = ZQSMSMasuk
+    left = 120
+    top = 453
+  end
+  object DChatMasuk: TDataSource
+    DataSet = ZQChatMasuk
+    left = 207
+    top = 455
+  end
+  object DChatTerkirim: TDataSource
+    DataSet = ZQChatTerkirim
+    left = 304
+    top = 455
+  end
+  object DPengguna: TDataSource
+    DataSet = ZQPengguna
+    left = 392
+    top = 455
+  end
+  object DFormat: TDataSource
+    DataSet = ZQFormat
+    left = 474
+    top = 455
+  end
+  object ZQIdentitas: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_identitaslembaga'
+    )
+    Params = <>
+    left = 552
+    top = 399
+  end
+  object ZQPengaturan: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_config'
+    )
+    Params = <>
+    left = 632
+    top = 399
+  end
+  object ZQRegister: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 784
+    top = 352
+  end
+  object ZQCariChat: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 712
+    top = 345
+  end
+  object ZQCariSMS: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 720
+    top = 400
+  end
+  object ZQTimerKirimSMS: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 752
+    top = 455
+  end
+  object ZQTimerChat: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 856
+    top = 440
+  end
+  object ZQTimerCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 848
+    top = 384
+  end
+  object ZQSimpan: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 840
+    top = 312
+  end
+  object ZQReset: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 784
+    top = 408
+  end
+  object DBalasan: TDataSource
+    DataSet = ZQBalasan
+    left = 909
+    top = 232
+  end
+  object ZQBalasan: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_smsbalasan'
+    )
+    Params = <>
+    left = 909
+    top = 174
+  end
+  object ZQKades: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_cakades.no_urut, t_cakades.nama_kades, t_kelurahan.nama_kelurahan, t_cakades.foto, t_cakades.warna FROM (t_cakades INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_cakades.daerah) order by t_cakades.no_urut asc'
+    )
+    Params = <>
+    left = 976
+    top = 232
+  end
+  object ZQGrafikKades: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 920
+    top = 392
+  end
+  object ZQHitungKades: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 944
+    top = 448
+  end
+  object DKades: TDataSource
+    DataSet = ZQKades
+    left = 976
+    top = 288
+  end
+  object ZQPetaCari: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 920
+    top = 330
+  end
+  object ZQPeta: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 928
+    top = 24
+  end
+  object ZQTreeDapil: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 984
+    top = 16
+  end
+  object ZQDPT: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_dpt.id, t_dpt.ktp, t_dpt.nama, t_tps.no_tps, t_kelurahan.nama_kelurahan, t_kecamatan.nama_kecamatan, t_kabkota.nama_kota, t_provinsi.nama_provinsi FROM (((((t_dpt INNER JOIN t_tps ON t_tps.id_tps=t_dpt.tps) INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi) order by t_dpt.id asc'
+    )
+    Params = <>
+    left = 984
+    top = 104
+  end
+  object DDPT: TDataSource
+    DataSet = ZQDPT
+    left = 984
+    top = 168
+  end
+  object ZQCalegInfo: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'select * from t_caleginfo where id=''1'''
+    )
+    Params = <>
+    left = 936
+    top = 96
+  end
+  object ZQCari4: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 912
+    top = 293
+  end
+  object ZQCari5: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 894
+    top = 347
+  end
+  object ZQHasil: TZQuery
+    Connection = KoneksiDatabase
+    Params = <>
+    left = 975
+    top = 355
+  end
+  object ZQKursi: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      '   SELECT t_perolehankursi.id, t_dapil.nama_dapil, t_perolehankursi.kursike,'
+      '   t_partai.nama_partai, t_calegdprdprov.nama_caleg, t_perolehankursi.suaracaleg, t_perolehankursi.hasilbagi '
+      '   FROM '
+      '   (((t_perolehankursi INNER JOIN t_dapil ON t_dapil.id_dapil=t_perolehankursi.dapil) '
+      '   INNER JOIN t_calegdprdprov ON t_calegdprdprov.id=t_perolehankursi.idcaleg) '
+      '   INNER JOIN t_partai ON t_partai.no_urut=t_perolehankursi.idpartai) '
+      '   order by t_perolehankursi.id asc'
+    )
+    Params = <>
+    left = 974
+    top = 412
+  end
+  object DKursi: TDataSource
+    DataSet = ZQKursi
+    left = 899
+    top = 445
+  end
+  object DPetaSuara: TDataSource
+    DataSet = ZQPetaSuara
+    left = 930
+    top = 323
+  end
+  object ZQPetaSuara: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_petasuara.id, t_petasuara.nama, t_petasuara.ktp, t_petasuara.alamat, t_petasuara.nohp,'
+      't_tps.no_tps as no_tps, t_kelurahan.nama_kelurahan,'
+      't_kecamatan.nama_kecamatan, t_kabkota.nama_kota, t_provinsi.nama_provinsi FROM'
+      '(((((t_petasuara INNER JOIN t_tps ON t_tps.id_tps=t_petasuara.idtps)'
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan)'
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan)'
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota)'
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+    )
+    Params = <>
+    left = 943
+    top = 172
+  end
+  object ZQHDPRDK: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprdkabkota.id, t_calegdprdkabkota.no_urut, '
+      't_calegdprdkabkota.nama_caleg, t_partai.nama_partai, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_dapil.nama_dapil, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungdprdkab.perolehan,'
+      't_hitungdprdkab.suara_sah, t_hitungdprdkab.suara_tidaksah, t_hitungdprdkab.dpt'
+      'FROM ((((((((t_hitungdprdkab '
+      'INNER JOIN t_calegdprdkabkota ON t_calegdprdkabkota.id=t_hitungdprdkab.id_caleg) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungdprdkab.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'INNER JOIN t_dapil ON t_calegdprdkabkota.dapil=t_dapil.id_dapil) '
+      'INNER JOIN t_partai ON t_partai.no_urut=t_calegdprdkabkota.partai) '
+      'ORDER BY t_calegdprdkabkota.id ASC '
+    )
+    Params = <>
+    left = 1056
+    top = 8
+  end
+  object ZQHDPRDP: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprdprov.id, t_calegdprdprov.no_urut, '
+      't_calegdprdprov.nama_caleg, t_partai.nama_partai, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_dapil.nama_dapil, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungdprdprov.perolehan,'
+      't_hitungdprdprov.suara_sah, t_hitungdprdprov.suara_tidaksah, t_hitungdprdprov.dpt'
+      'FROM ((((((((t_calegdprdprov '
+      'INNER JOIN t_hitungdprdprov ON t_hitungdprdprov.id_caleg=t_calegdprdprov.id) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungdprdprov.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'INNER JOIN t_dapil ON t_calegdprdprov.dapil=t_dapil.id_dapil) '
+      'INNER JOIN t_partai ON t_partai.no_urut=t_calegdprdprov.partai) '
+      'ORDER BY t_calegdprdprov.id ASC'
+    )
+    Params = <>
+    left = 1056
+    top = 64
+  end
+  object ZQHDPR: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprri.id, t_calegdprri.no_urut, '
+      't_calegdprri.nama_caleg, t_partai.nama_partai, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_dapil.nama_dapil, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungdprri.perolehan,'
+      't_hitungdprri.suara_sah, t_hitungdprri.suara_tidaksah, t_hitungdprri.dpt'
+      'FROM ((((((((t_calegdprri '
+      'INNER JOIN t_hitungdprri ON t_hitungdprri.id_caleg=t_calegdprri.id) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungdprri.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'INNER JOIN t_dapil ON t_calegdprri.dapil=t_dapil.id_dapil) '
+      'INNER JOIN t_partai ON t_partai.no_urut=t_calegdprri.partai) '
+      'ORDER BY t_calegdprri.id ASC'
+    )
+    Params = <>
+    left = 1056
+    top = 120
+  end
+  object ZQHDPD: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdpdri.no_urut, t_calegdpdri.nama_caleg, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungdpdri.perolehan,'
+      't_hitungdpdri.suara_sah, t_hitungdpdri.suara_tidaksah, t_hitungdpdri.dpt'
+      'FROM ((((((t_hitungdpdri '
+      'INNER JOIN t_calegdpdri ON t_calegdpdri.no_urut=t_hitungdpdri.no_urut) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungdpdri.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'ORDER BY t_calegdpdri.no_urut ASC '
+    )
+    Params = <>
+    left = 1056
+    top = 176
+  end
+  object ZQHPartai: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_partai.no_urut, t_partai.nama_partai, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungpartai.suara_dprdkab,'
+      't_hitungpartai.suara_dprdprov, t_hitungpartai.suara_dprri, '
+      't_hitungpartai.suara_sah, t_hitungpartai.suara_tidaksah, t_hitungpartai.dpt'
+      'FROM ((((((t_hitungpartai '
+      'INNER JOIN t_partai ON t_partai.no_urut=t_hitungpartai.no_urut) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungpartai.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'ORDER BY t_partai.no_urut ASC '
+    )
+    Params = <>
+    left = 1056
+    top = 232
+  end
+  object ZQHCapres: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_capres.no_urut, t_capres.nama_capres, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungcapres.perolehan,'
+      't_hitungcapres.suara_sah, t_hitungcapres.suara_tidaksah, t_hitungcapres.dpt'
+      'FROM ((((((t_hitungcapres '
+      'INNER JOIN t_capres ON t_capres.no_urut=t_hitungcapres.no_urut) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungcapres.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'ORDER BY t_capres.no_urut ASC '
+    )
+    Params = <>
+    left = 1056
+    top = 296
+  end
+  object DHDPRDK: TDataSource
+    DataSet = ZQHDPRDK
+    left = 1129
+    top = 8
+  end
+  object DHDPRDP: TDataSource
+    DataSet = ZQHDPRDP
+    left = 1129
+    top = 64
+  end
+  object DHDPR: TDataSource
+    DataSet = ZQHDPR
+    left = 1129
+    top = 120
+  end
+  object DHDPD: TDataSource
+    DataSet = ZQHDPD
+    left = 1129
+    top = 176
+  end
+  object DHPartai: TDataSource
+    DataSet = ZQHPartai
+    left = 1129
+    top = 232
+  end
+  object DHCapres: TDataSource
+    DataSet = ZQHCapres
+    left = 1128
+    top = 295
+  end
+  object ZQHCagub: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_cagub.no_urut, t_cagub.nama_cagub, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungcagub.perolehan,'
+      't_hitungcagub.suara_sah, t_hitungcagub.suara_tidaksah, t_hitungcagub.dpt'
+      'FROM ((((((t_hitungcagub '
+      'INNER JOIN t_cagub ON t_cagub.no_urut=t_hitungcagub.no_urut) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungcagub.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'ORDER BY t_cagub.no_urut ASC '
+    )
+    Params = <>
+    left = 1056
+    top = 352
+  end
+  object ZQHCabup: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_cabupkota.no_urut, t_cabupkota.nama_cabup, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungcabup.perolehan,'
+      't_hitungcabup.suara_sah, t_hitungcabup.suara_tidaksah, t_hitungcabup.dpt'
+      'FROM ((((((t_hitungcabup '
+      'INNER JOIN t_cabupkota ON t_cabupkota.no_urut=t_hitungcabup.no_urut) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungcabup.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'ORDER BY t_cabupkota.no_urut ASC '
+    )
+    Params = <>
+    left = 1056
+    top = 416
+  end
+  object ZQHKades: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_cakades.no_urut, t_cakades.nama_kades, t_provinsi.nama_provinsi,'
+      't_kabkota.nama_kota, t_kecamatan.nama_kecamatan,'
+      't_kelurahan.nama_kelurahan, t_tps.no_tps, t_hitungkades.perolehan,'
+      't_hitungkades.suara_sah, t_hitungkades.suara_tidaksah, t_hitungkades.dpt'
+      'FROM ((((((t_hitungkades'
+      'INNER JOIN t_cakades ON t_cakades.no_urut=t_hitungkades.no_urut) '
+      'INNER JOIN t_tps ON t_tps.id_tps=t_hitungkades.tps) '
+      'INNER JOIN t_kelurahan ON t_kelurahan.id_kelurahan=t_tps.id_kelurahan) '
+      'INNER JOIN t_kecamatan ON t_kecamatan.id_kecamatan=t_kelurahan.id_kecamatan) '
+      'INNER JOIN t_kabkota ON t_kabkota.id_kota=t_kecamatan.id_kota) '
+      'INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_kabkota.id_provinsi)'
+      'ORDER BY t_cakades.no_urut ASC '
+    )
+    Params = <>
+    left = 1055
+    top = 471
+  end
+  object DHCagub: TDataSource
+    DataSet = ZQHCagub
+    left = 1129
+    top = 355
+  end
+  object DHCabup: TDataSource
+    DataSet = ZQHCabup
+    left = 1129
+    top = 416
+  end
+  object DHKades: TDataSource
+    DataSet = ZQHKades
+    left = 1129
+    top = 472
+  end
+  object ZQGDPR: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprri.id, t_calegdprri.no_urut, t_calegdprri.nama_caleg, t_partai.nama_partai, t_dapil.nama_dapil, t_calegdprri.foto, t_calegdprri.warna, t_calegdprri.dapil FROM ((t_calegdprri INNER JOIN t_dapil ON t_calegdprri.dapil=t_dapil.id_dapil) INNER JOIN t_partai ON t_partai.no_urut=t_calegdprri.partai) order by t_calegdprri.id asc'
+    )
+    Params = <>
+    left = 1200
+    top = 32
+  end
+  object ZQGDPRDP: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprdprov.id, t_calegdprdprov.no_urut, t_calegdprdprov.nama_caleg, t_provinsi.nama_provinsi, t_partai.nama_partai, t_dapil.nama_dapil, t_calegdprdprov.foto, t_calegdprdprov.warna, t_calegdprdprov.dapil FROM (((t_calegdprdprov INNER JOIN t_dapil ON t_calegdprdprov.dapil=t_dapil.id_dapil) INNER JOIN t_partai ON t_partai.no_urut=t_calegdprdprov.partai) INNER JOIN t_provinsi ON t_provinsi.id_provinsi=t_calegdprdprov.prov) order by t_calegdprdprov.id asc'
+    )
+    Params = <>
+    left = 1200
+    top = 96
+  end
+  object ZQGDPRDK: TZQuery
+    Connection = KoneksiDatabase
+    Active = True
+    SQL.Strings = (
+      'SELECT t_calegdprdkabkota.id, t_calegdprdkabkota.no_urut, t_calegdprdkabkota.nama_caleg, t_kabkota.nama_kota, t_partai.nama_partai, t_dapil.nama_dapil, t_calegdprdkabkota.foto, t_calegdprdkabkota.warna, t_calegdprdkabkota.dapil FROM (((t_calegdprdkabkota INNER JOIN t_dapil ON t_calegdprdkabkota.dapil=t_dapil.id_dapil) INNER JOIN t_partai ON t_partai.no_urut=t_calegdprdkabkota.partai) INNER JOIN t_kabkota ON t_kabkota.id_kota=t_calegdprdkabkota.kabkota)  order by t_calegdprdkabkota.id asc'
+    )
+    Params = <>
+    left = 1200
+    top = 156
+  end
+end

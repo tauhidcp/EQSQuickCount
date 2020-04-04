@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="BotEngine.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="58"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uutama.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBotEngine"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UUtama"/>
+        <TopLine Value="215"/>
+        <CursorPos Y="238"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="kirimpesan.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="36"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="ssl_openssl.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="83"/>
+        <CursorPos X="3" Y="95"/>
+        <UsageCount Value="7"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\BAHAN\Contoh Aplikasi\TooltipNotifier\frm1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <UsageCount Value="8"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="ucekserial.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="2" Y="14"/>
+        <UsageCount Value="11"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="ambilkirim.pas"/>
+        <UnitName Value="AmbilKirim"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5"/>
+        <CursorPos X="24" Y="32"/>
+        <UsageCount Value="18"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="ambilpesan.pas"/>
+        <UnitName Value="AmbilPesan"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="296"/>
+        <CursorPos Y="319"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="25" HistoryIndex="24">
+      <Position1>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="267" Column="4" TopLine="243"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="187" Column="29" TopLine="93"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="188" Column="127" TopLine="179"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="192" Column="81" TopLine="179"/>
+      </Position4>
+      <Position5>
+        <Filename Value="ambilpesan.pas"/>
+        <Caret Line="144" Column="7" TopLine="124"/>
+      </Position5>
+      <Position6>
+        <Filename Value="ambilpesan.pas"/>
+        <Caret Line="44" Column="13" TopLine="35"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="310" Column="5" TopLine="296"/>
+      </Position7>
+      <Position8>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="171" Column="11" TopLine="145"/>
+      </Position8>
+      <Position9>
+        <Filename Value="ambilpesan.pas"/>
+        <Caret Line="27" Column="28" TopLine="7"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="160" Column="5" TopLine="47"/>
+      </Position10>
+      <Position11>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="159" Column="5" TopLine="141"/>
+      </Position11>
+      <Position12>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="158" Column="5" TopLine="140"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="165" Column="6" TopLine="161"/>
+      </Position13>
+      <Position14>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="216" Column="8" TopLine="172"/>
+      </Position14>
+      <Position15>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="225" Column="2" TopLine="196"/>
+      </Position15>
+      <Position16>
+        <Filename Value="ambilpesan.pas"/>
+        <Caret Line="27" Column="39" TopLine="19"/>
+      </Position16>
+      <Position17>
+        <Filename Value="ambilpesan.pas"/>
+        <Caret Line="44" Column="23" TopLine="34"/>
+      </Position17>
+      <Position18>
+        <Filename Value="ambilpesan.pas"/>
+        <Caret Line="38" Column="3"/>
+      </Position18>
+      <Position19>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="196" Column="7" TopLine="194"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="197" Column="7" TopLine="195"/>
+      </Position20>
+      <Position21>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="198" Column="7" TopLine="196"/>
+      </Position21>
+      <Position22>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="197" Column="7" TopLine="195"/>
+      </Position22>
+      <Position23>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="196" Column="7" TopLine="194"/>
+      </Position23>
+      <Position24>
+        <Filename Value="uutama.pas"/>
+        <Caret Line="48" Column="38" TopLine="41"/>
+      </Position24>
+      <Position25>
+        <Filename Value="ambilpesan.pas"/>
+        <Caret Line="51" Column="29"/>
+      </Position25>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

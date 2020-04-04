@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="132">
+      <Unit0>
+        <Filename Value="EQSQuickCount.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="67" Y="32"/>
+        <UsageCount Value="203"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uutama.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUtama"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UUtama"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="1529"/>
+        <CursorPos X="56" Y="1584"/>
+        <UsageCount Value="200"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="upartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="89"/>
+        <CursorPos X="3" Y="91"/>
+        <UsageCount Value="200"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="udatamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="197"/>
+        <CursorPos X="45" Y="203"/>
+        <UsageCount Value="200"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="utambahpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="144"/>
+        <CursorPos X="3" Y="66"/>
+        <UsageCount Value="202"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="uprovinsi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="84"/>
+        <CursorPos X="35" Y="84"/>
+        <UsageCount Value="202"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="utambahprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="119"/>
+        <CursorPos X="3" Y="58"/>
+        <UsageCount Value="202"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="ukabupatenkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKabupatenKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="197"/>
+        <CursorPos X="65" Y="202"/>
+        <UsageCount Value="200"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="utambahkabupatenkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKabupatenKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="157"/>
+        <CursorPos X="3" Y="63"/>
+        <UsageCount Value="202"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="ukecamatan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKecamatan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="200"/>
+        <CursorPos X="61" Y="205"/>
+        <UsageCount Value="200"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="ukelurahandesa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKelurahanDesa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="59" Y="10"/>
+        <UsageCount Value="200"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="utps.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTps"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="261"/>
+        <CursorPos Y="284"/>
+        <UsageCount Value="200"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="utambahkecamatan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKecamatan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="213"/>
+        <CursorPos X="3" Y="88"/>
+        <UsageCount Value="200"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="utambahkelurahandesa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKelurahanDesa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="273"/>
+        <CursorPos X="3" Y="88"/>
+        <UsageCount Value="200"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="utambahtps.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahTPS"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="45"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="200"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="ucapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="121"/>
+        <CursorPos X="3" Y="123"/>
+        <UsageCount Value="200"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="ucagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="66"/>
+        <UsageCount Value="200"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="utambahcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="101"/>
+        <CursorPos X="3" Y="71"/>
+        <UsageCount Value="202"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="utambahcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="188"/>
+        <CursorPos X="3" Y="93"/>
+        <UsageCount Value="202"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="utambahcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="252"/>
+        <CursorPos X="5" Y="86"/>
+        <UsageCount Value="202"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="udapilkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDapilKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="438"/>
+        <CursorPos X="4" Y="440"/>
+        <UsageCount Value="201"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="udapilprovinsi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDapilProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="343"/>
+        <CursorPos X="5" Y="348"/>
+        <UsageCount Value="201"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="udapilri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDapilRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="343"/>
+        <CursorPos X="5" Y="348"/>
+        <UsageCount Value="201"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="ucalegdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="65"/>
+        <CursorPos X="3" Y="67"/>
+        <UsageCount Value="200"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="ucalegdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="3" Y="68"/>
+        <UsageCount Value="200"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="ucalegdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="3" Y="68"/>
+        <UsageCount Value="200"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="ucalegkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalegKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <CursorPos X="3" Y="69"/>
+        <UsageCount Value="200"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="ucabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="63" Y="36"/>
+        <UsageCount Value="201"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="utambahdapilri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapilRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="97"/>
+        <CursorPos X="28" Y="108"/>
+        <UsageCount Value="200"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="utambahdapilprovinsi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapilProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="30" Y="106"/>
+        <UsageCount Value="200"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="utambahdapilkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapilKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="105"/>
+        <CursorPos X="33" Y="111"/>
+        <UsageCount Value="200"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="utambahcalegdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="156"/>
+        <CursorPos X="23" Y="137"/>
+        <UsageCount Value="200"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="utambahcalegdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="200"/>
+        <CursorPos X="47" Y="43"/>
+        <UsageCount Value="200"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="utambahcalegdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegDPRDProvinsi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="252"/>
+        <CursorPos X="3" Y="132"/>
+        <UsageCount Value="200"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="utambahcalegdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahCalegKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="267"/>
+        <CursorPos X="3" Y="107"/>
+        <UsageCount Value="200"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="utimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTIMSES"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="331"/>
+        <CursorPos X="64" Y="342"/>
+        <UsageCount Value="200"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="usaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="238"/>
+        <CursorPos X="7" Y="252"/>
+        <UsageCount Value="200"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="uusulantimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUsulanTIMSES"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="220"/>
+        <CursorPos X="3" Y="222"/>
+        <UsageCount Value="200"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="udukunganindependen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDukunganIndependen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="299" Y="60"/>
+        <UsageCount Value="200"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="upolling.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPolling"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="35" Y="88"/>
+        <UsageCount Value="200"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="uusulsaran.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUsulSaran"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="59"/>
+        <CursorPos X="34" Y="75"/>
+        <UsageCount Value="200"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="utambahtimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahTimses"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="303"/>
+        <CursorPos X="83" Y="316"/>
+        <UsageCount Value="200"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="utambahsaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahSaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="133"/>
+        <CursorPos X="7" Y="153"/>
+        <UsageCount Value="200"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="utambahusulantimses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahUsulanTimses"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="173"/>
+        <UsageCount Value="200"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="ukirimsms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKirimSMS"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="136"/>
+        <CursorPos X="4" Y="65"/>
+        <UsageCount Value="202"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="uchat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FChat"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="76"/>
+        <CursorPos X="15" Y="155"/>
+        <UsageCount Value="200"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="uhitungcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="116"/>
+        <CursorPos X="13" Y="49"/>
+        <UsageCount Value="201"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="uubahhitungcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="430"/>
+        <CursorPos X="32" Y="446"/>
+        <UsageCount Value="202"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="uhitungcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="89"/>
+        <CursorPos X="11" Y="49"/>
+        <UsageCount Value="202"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="uhitungcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="60" Y="211"/>
+        <UsageCount Value="202"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="uhitungpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="289"/>
+        <UsageCount Value="202"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="uhitungdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="88"/>
+        <CursorPos X="13" Y="49"/>
+        <UsageCount Value="202"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="uhitungdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="107"/>
+        <CursorPos X="42" Y="55"/>
+        <UsageCount Value="202"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="uhitungdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="62"/>
+        <CursorPos X="71" Y="121"/>
+        <UsageCount Value="202"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="uhitungdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungDPRDKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="67" Y="51"/>
+        <UsageCount Value="202"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="uubahhitungcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="129"/>
+        <CursorPos X="31" Y="140"/>
+        <UsageCount Value="200"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="uubahhitungcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="126"/>
+        <CursorPos X="3" Y="101"/>
+        <UsageCount Value="200"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="uubahhitungpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="307"/>
+        <CursorPos X="6" Y="131"/>
+        <UsageCount Value="200"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="uubahhitungdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="121"/>
+        <CursorPos X="29" Y="138"/>
+        <UsageCount Value="200"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="uubahhitungdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="118"/>
+        <CursorPos X="29" Y="138"/>
+        <UsageCount Value="200"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="uubahhitungdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="118"/>
+        <CursorPos X="34" Y="138"/>
+        <UsageCount Value="200"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="uubahhitungdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungDPRDKab"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="110"/>
+        <CursorPos X="33" Y="133"/>
+        <UsageCount Value="200"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="udapil.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataDAPIL"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="7" Y="115"/>
+        <UsageCount Value="200"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="utambahdapil.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDapil"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="5" Y="71"/>
+        <UsageCount Value="200"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="ugrafikcapres.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="144"/>
+        <CursorPos X="66" Y="328"/>
+        <UsageCount Value="200"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="ugrafikcagub.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikCagub"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="148"/>
+        <CursorPos X="7" Y="256"/>
+        <UsageCount Value="200"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="ugrafikcabupkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikCabupKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="137"/>
+        <CursorPos X="33" Y="176"/>
+        <UsageCount Value="200"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="ugrafikpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="312"/>
+        <CursorPos X="3" Y="229"/>
+        <UsageCount Value="200"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="ugrafikdpdri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="141"/>
+        <CursorPos X="114" Y="179"/>
+        <UsageCount Value="200"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="ugrafikdprri.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="110"/>
+        <CursorPos X="12" Y="267"/>
+        <UsageCount Value="200"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="ugrafikdprdprov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="110"/>
+        <CursorPos X="6" Y="267"/>
+        <UsageCount Value="200"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="ugrafikdprdkabkota.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikDPRDKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="14" Y="266"/>
+        <UsageCount Value="200"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="udatasmsmasuk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataSMSMasuk"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="196"/>
+        <CursorPos X="35" Y="230"/>
+        <UsageCount Value="204"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="udatasmsterkirim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataSMSTerkirim"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos X="33" Y="8"/>
+        <UsageCount Value="204"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="udatachatmasuk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataChatMasuk"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="189"/>
+        <CursorPos X="35" Y="223"/>
+        <UsageCount Value="204"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="udatachatterkirim.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataChatTerkirim"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="167"/>
+        <CursorPos X="32" Y="183"/>
+        <UsageCount Value="204"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="udatapengguna.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataPengguna"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos X="8" Y="63"/>
+        <UsageCount Value="204"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="udataformatsmschat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataFormatSMSChat"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="78"/>
+        <CursorPos X="3" Y="57"/>
+        <UsageCount Value="204"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="ukirimchat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FKirimChat"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="25" Y="217"/>
+        <UsageCount Value="200"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="usms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSMS"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="233"/>
+        <CursorPos X="27" Y="301"/>
+        <UsageCount Value="200"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="ufilter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FFilter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="195" Y="86"/>
+        <UsageCount Value="201"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="upengaturan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPengaturan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="252"/>
+        <CursorPos X="3" Y="109"/>
+        <UsageCount Value="201"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="uidentitas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FIdentitas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="33" Y="70"/>
+        <UsageCount Value="201"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="utambahpengguna.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahPengguna"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="47" Y="314"/>
+        <UsageCount Value="200"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="uhakakses.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHakAkses"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="274"/>
+        <CursorPos X="66" Y="301"/>
+        <UsageCount Value="200"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="uregister.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FRegister"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="57" Y="64"/>
+        <UsageCount Value="200"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="usmsprocess.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="331"/>
+        <CursorPos X="72" Y="511"/>
+        <UsageCount Value="202"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="uchatprocess.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2454"/>
+        <CursorPos X="40" Y="2465"/>
+        <UsageCount Value="200"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="ulogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="98"/>
+        <CursorPos X="29" Y="101"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="ucekserial.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="32"/>
+        <CursorPos X="55" Y="8"/>
+        <UsageCount Value="200"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="uresetdb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="146"/>
+        <CursorPos X="205" Y="232"/>
+        <UsageCount Value="200"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="utambahdukunganindie.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDukunganIndependen"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="4" Y="74"/>
+        <UsageCount Value="187"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="udatasmsbalasan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataSMSBalasan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UdataSMSBalasan"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="54" Y="57"/>
+        <UsageCount Value="173"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="uubahbalasan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahBalasan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="81" Y="51"/>
+        <UsageCount Value="173"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="ucakades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCalonKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="144"/>
+        <CursorPos X="3" Y="140"/>
+        <UsageCount Value="161"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="uhitungkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FHitungKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="2" Y="184"/>
+        <UsageCount Value="161"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="ugrafikkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FGrafikKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="307"/>
+        <CursorPos X="93" Y="225"/>
+        <UsageCount Value="161"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="uubahhitungkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FUbahHitungKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="96"/>
+        <CursorPos X="31" Y="114"/>
+        <UsageCount Value="158"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="utambahkades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahKades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="347"/>
+        <CursorPos X="14" Y="366"/>
+        <UsageCount Value="154"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="upetasuara.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPetaSuara"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="187"/>
+        <CursorPos Y="190"/>
+        <UsageCount Value="124"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="utambahpetasuara.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahPetaSuara"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="160"/>
+        <CursorPos X="3" Y="106"/>
+        <UsageCount Value="124"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="udatadpt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FDataDPT"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="33"/>
+        <CursorPos X="48" Y="39"/>
+        <UsageCount Value="72"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="utambahdpt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FTambahDPT"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="409"/>
+        <CursorPos X="520" Y="74"/>
+        <UsageCount Value="72"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="ugrafikpeta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="134"/>
+        <CursorPos X="3" Y="138"/>
+        <UsageCount Value="66"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="upilihpartai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPilihPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="117"/>
+        <CursorPos X="27" Y="94"/>
+        <UsageCount Value="66"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="usaintelague.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSainteLague"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="214"/>
+        <CursorPos X="4" Y="233"/>
+        <UsageCount Value="63"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="ufilterpeta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FFilterPeta"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="96"/>
+        <CursorPos X="3" Y="98"/>
+        <UsageCount Value="48"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="ufilterhitung.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FFilterHitung"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="360"/>
+        <CursorPos X="80" Y="364"/>
+        <UsageCount Value="41"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="threadhitungdprdprov.pas"/>
+        <UnitName Value="ThreadHitungDPRDProv"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="7"/>
+        <UsageCount Value="26"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="uimportexcel.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="24" Y="42"/>
+        <UsageCount Value="8"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="D:\BAHAN\Contoh Aplikasi\Virtual Tree View\unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="185"/>
+        <CursorPos X="6" Y="202"/>
+        <UsageCount Value="9"/>
+      </Unit110>
+      <Unit111>
+        <Filename Value="cHash.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="93"/>
+        <CursorPos X="11" Y="105"/>
+        <UsageCount Value="5"/>
+      </Unit111>
+      <Unit112>
+        <Filename Value="ubalassmschat.pas"/>
+        <ComponentName Value="FBalasSMSChat"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="33" Y="9"/>
+        <UsageCount Value="5"/>
+      </Unit112>
+      <Unit113>
+        <Filename Value="libjpfpdf.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1714"/>
+        <CursorPos X="42" Y="1722"/>
+        <UsageCount Value="9"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="EQSQuickCount.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="uthreadhitungdprdprov.pas"/>
+        <UnitName Value="UThreadHitungDPRDProv"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="12" Y="62"/>
+        <UsageCount Value="8"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="D:\V2\udatamodule.pas"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="D:\V2\uresetdb.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="579"/>
+        <CursorPos Y="598"/>
+        <UsageCount Value="8"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="D:\V2\uutama.pas"/>
+        <ComponentName Value="FUtama"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UUtama"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2017"/>
+        <CursorPos X="3" Y="2020"/>
+        <UsageCount Value="13"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="D:\V2\ulogin.pas"/>
+        <ComponentName Value="FLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+      </Unit119>
+      <Unit120>
+        <Filename Value="D:\V2\upengaturan.pas"/>
+        <ComponentName Value="FPengaturan"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos X="2" Y="125"/>
+        <UsageCount Value="8"/>
+      </Unit120>
+      <Unit121>
+        <Filename Value="D:\V2\udatadpt.pas"/>
+        <ComponentName Value="FDataDPT"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="64"/>
+        <UsageCount Value="8"/>
+      </Unit121>
+      <Unit122>
+        <Filename Value="D:\V2\uhitungdprdkabkota.pas"/>
+        <ComponentName Value="FHitungDPRDKabKota"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="295"/>
+        <CursorPos X="13" Y="307"/>
+        <UsageCount Value="10"/>
+      </Unit122>
+      <Unit123>
+        <Filename Value="D:\V2\uhitungdprdprov.pas"/>
+        <ComponentName Value="FHitungDPRDProv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="299"/>
+        <CursorPos X="13" Y="315"/>
+        <UsageCount Value="10"/>
+      </Unit123>
+      <Unit124>
+        <Filename Value="D:\V2\uhitungdpdri.pas"/>
+        <ComponentName Value="FHitungDPDRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="309"/>
+        <CursorPos X="13" Y="324"/>
+        <UsageCount Value="10"/>
+      </Unit124>
+      <Unit125>
+        <Filename Value="D:\V2\uhitungdprri.pas"/>
+        <ComponentName Value="FHitungDPRRI"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="320"/>
+        <CursorPos X="13" Y="332"/>
+        <UsageCount Value="10"/>
+      </Unit125>
+      <Unit126>
+        <Filename Value="D:\V2\uhitungcapres.pas"/>
+        <ComponentName Value="FHitungCapres"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="111"/>
+        <CursorPos X="13" Y="122"/>
+        <UsageCount Value="10"/>
+      </Unit126>
+      <Unit127>
+        <Filename Value="D:\V2\uhitungpartai.pas"/>
+        <ComponentName Value="FHitungPartai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="328"/>
+        <CursorPos Y="341"/>
+        <UsageCount Value="10"/>
+      </Unit127>
+      <Unit128>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1733"/>
+        <CursorPos X="14" Y="1749"/>
+        <UsageCount Value="9"/>
+      </Unit128>
+      <Unit129>
+        <Filename Value="D:\V2\uhitungcabupkota.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit129>
+      <Unit130>
+        <Filename Value="D:\V2\uhitungcagub.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit130>
+      <Unit131>
+        <Filename Value="D:\V2\uhitungkades.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="296"/>
+        <UsageCount Value="10"/>
+      </Unit131>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

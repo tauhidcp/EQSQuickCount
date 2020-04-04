@@ -1,0 +1,175 @@
+object FFilterPeta: TFFilterPeta
+  Left = 512
+  Height = 262
+  Top = 159
+  Width = 299
+  BorderIcons = [biSystemMenu]
+  Caption = 'FFilterPeta'
+  ClientHeight = 262
+  ClientWidth = 299
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object PBawah: TPanel
+    Left = 0
+    Height = 50
+    Top = 212
+    Width = 299
+    Align = alBottom
+    BevelOuter = bvLowered
+    ClientHeight = 50
+    ClientWidth = 299
+    TabOrder = 0
+    object BFilter: TBitBtn
+      Left = 112
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Filter'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000771309FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00007D21F5037B1EFF0079
+        1521FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0001832BF543A15FFF007B
+        1FE400791927FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00219751FE1B9149FE158F43FE0F8B3BFE3A9F5EFF80C196FF46A3
+        62FF007D1FE70079192AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00299B5BFF90CAA9FF8DC8A5FF8AC6A1FF88C59EFF6AB685FF82C2
+        97FF48A566FF007D21EA00791B30FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00319F63FF94CDADFF6FBA8EFF6BB889FF66B685FF61B380FF67B5
+        82FF83C298FF3CA05CFF007F25FCFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF0037A36BFF96CEB0FF94CDADFF91CBAAFF90CBA8FF74BC90FF8AC7
+        A1FF46A568FF078735FD01832D0FFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF003DA56FFF37A36DFD33A167FD2F9D61FD55AF7CFF91CBAAFF4FAB
+        74FF178F45FD118B3D0CFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00319F63F55AB381FF2898
+        57FF1F954F09FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0037A36BF5319F65FF2D9D
+        5F09FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      OnClick = BFilterClick
+      TabOrder = 0
+    end
+    object LStatus: TLabel
+      Left = 47
+      Height = 15
+      Top = 14
+      Width = 38
+      Caption = 'LStatus'
+      ParentColor = False
+      Visible = False
+    end
+  end
+  object PAtas: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 299
+    Align = alTop
+    BevelOuter = bvLowered
+    Caption = 'Filter Peta Suara'
+    Font.Height = -17
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 162
+    Top = 50
+    Width = 299
+    Align = alClient
+    BevelOuter = bvLowered
+    ClientHeight = 162
+    ClientWidth = 299
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 32
+      Height = 15
+      Top = 56
+      Width = 49
+      Caption = 'Kab/Kota'
+      ParentColor = False
+    end
+    object Label1: TLabel
+      Left = 32
+      Height = 15
+      Top = 24
+      Width = 42
+      Caption = 'Provinsi'
+      ParentColor = False
+    end
+    object CBProv: TComboBox
+      Left = 128
+      Height = 23
+      Top = 24
+      Width = 132
+      ItemHeight = 15
+      OnChange = CBProvChange
+      OnKeyPress = CBProvKeyPress
+      TabOrder = 0
+      Text = '-Pilih-'
+    end
+    object CBKabKota: TComboBox
+      Left = 128
+      Height = 23
+      Top = 56
+      Width = 132
+      ItemHeight = 15
+      OnChange = CBKabKotaChange
+      OnKeyPress = CBKabKotaKeyPress
+      TabOrder = 1
+      Text = '-Pilih-'
+    end
+    object Label3: TLabel
+      Left = 32
+      Height = 15
+      Top = 88
+      Width = 59
+      Caption = 'Kecamatan'
+      ParentColor = False
+    end
+    object CBKec: TComboBox
+      Left = 128
+      Height = 23
+      Top = 88
+      Width = 132
+      ItemHeight = 15
+      OnChange = CBKecChange
+      OnKeyPress = CBKecKeyPress
+      TabOrder = 2
+      Text = '-Pilih-'
+    end
+    object CBKelDesa: TComboBox
+      Left = 128
+      Height = 23
+      Top = 120
+      Width = 132
+      ItemHeight = 15
+      OnKeyPress = CBKelDesaKeyPress
+      TabOrder = 3
+      Text = '-Pilih-'
+    end
+    object Label6: TLabel
+      Left = 32
+      Height = 15
+      Top = 120
+      Width = 83
+      Caption = 'Kelurahan/Desa'
+      ParentColor = False
+    end
+  end
+end

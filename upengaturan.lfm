@@ -1,0 +1,267 @@
+object FPengaturan: TFPengaturan
+  Left = 410
+  Height = 404
+  Top = 119
+  Width = 326
+  BorderIcons = [biSystemMenu]
+  Caption = 'FPengaturan'
+  ClientHeight = 404
+  ClientWidth = 326
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object PAtas: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 326
+    Align = alTop
+    BevelOuter = bvLowered
+    Caption = 'Form Pengaturan Aplikasi'
+    Font.Height = -17
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PBawah: TPanel
+    Left = 0
+    Height = 50
+    Top = 354
+    Width = 326
+    Align = alBottom
+    BevelOuter = bvLowered
+    ClientHeight = 50
+    ClientWidth = 326
+    TabOrder = 1
+    object BSimpan: TBitBtn
+      Left = 128
+      Height = 30
+      Top = 8
+      Width = 83
+      Caption = 'Simpan'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000BA6A368FB969
+        35B5B86935EEB76835FFB56835FFB46734FFB26634FFB06533FFAE6433FFAC63
+        32FFAA6232FFA96132FFA86031FFA76031FEA66031F1A86131C4BA6A35DEEBC6
+        ADFFEAC5ADFFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFB
+        F8FFFEFBF8FFFEFBF8FFFEFBF8FFC89A7CFFC79879FFA76031EDBA6B37FEEDCA
+        B3FFE0A27AFFFEFAF7FF62C088FF62C088FF62C088FF62C088FF62C088FF62C0
+        88FF62C088FF62C088FFFDF9F6FFCA8D65FFC99B7CFFA76031FEBB6C38FFEECC
+        B6FFE1A27AFFFEFAF7FFBFDCC2FFBFDCC2FFBFDCC2FFBFDCC2FFBFDCC2FFBFDC
+        C2FFBFDCC2FFBFDCC2FFFDF9F6FFCD9068FFCC9E81FFA86132FFBB6B38FFEFCE
+        B8FFE1A279FFFEFAF7FF62C088FF62C088FF62C088FF62C088FF62C088FF62C0
+        88FF62C088FF62C088FFFDF9F6FFCF936AFFCEA384FFAA6132FFBA6A36FFEFD0
+        BBFFE2A27AFFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFBF8FFFEFB
+        F8FFFEFBF8FFFEFBF8FFFEFBF8FFD3966DFFD2A78AFFAB6232FFBB6A36FFF0D2
+        BEFFE2A37AFFE2A37AFFE1A37AFFE2A37BFFE1A37BFFE0A178FFDE9F77FFDD9F
+        76FFDC9D74FFD99B72FFD89971FFD69970FFD5AB8EFFAD6333FFBB6A36FFF2D5
+        C2FFE3A37AFFE3A37AFFE2A37BFFE2A37BFFE2A47BFFE1A279FFE0A178FFDEA0
+        77FFDE9E75FFDC9D74FFDA9B73FFD99B73FFDAB095FFAF6433FFBB6A36FFF2D8
+        C5FFE3A47BFFE3A37AFFE3A47AFFE2A47BFFE2A37BFFE1A37BFFE1A279FFDFA0
+        77FFDE9F76FFDD9E74FFDB9C72FFDC9D74FFDDB59AFFB16534FFBB6B36FFF4D9
+        C7FFE6A67DFFC88C64FFC98D65FFC98E67FFCB926CFFCB926DFFCA9069FFC88C
+        65FFC88C64FFC88C64FFC88C64FFDA9C74FFE1BA9FFFB36634FFBB6B36FEF4DC
+        C9FFE7A77DFFF9ECE1FFF9ECE1FFF9EDE3FFFCF4EEFFFDFAF7FFFDF7F3FFFAED
+        E5FFF7E7DBFFF7E5D9FFF6E5D8FFDEA077FFE4BEA4FFB46734FFBC6B36FAF5DD
+        CCFFE7A87EFFFAF0E8FFFAF0E8FFC98D66FFFAF0E9FFFDF8F3FFFEFAF8FFFCF4
+        EFFFF9E9DFFFF7E7DBFFF7E5D9FFE0A278FFE7C2A9FFB66835FFBC6B36F0F6DF
+        D0FFE8A87EFFFCF6F1FFFCF6F1FFC88C64FFFAF1E9FFFBF4EEFFFDFAF7FFFDF9
+        F6FFFAF0E8FFF8E8DDFFF7E6DBFFE1A37AFFEFD5C3FFB76935FEBC6B36D8F6DF
+        D1FFE9AA80FFFEFAF6FFFDFAF6FFC88C64FFFBF3EEFFFBF1EAFFFCF6F2FFFEFB
+        F8FFFCF6F1FFF9ECE2FFF8E7DBFFEED0BAFFECD0BDFFBB703EF8BC6B369BF6E0
+        D1FFF7E0D1FFFEFBF8FFFEFBF7FFFDF9F6FFFCF5F0FFFAF0EAFFFBF2EDFFFDF9
+        F6FFFDFAF7FFFBF1EBFFF8E9DFFEECD0BDFBC9895EECB5693563BC6B3671BC6B
+        3690BC6B36CCBC6B36EEBC6B36FABB6B36FEBB6B36FFBB6A36FFBB6A36FFBC6C
+        39FFBD6E3BFFBB6D3AFFBB6B38EFBB703ECBB6693554FFFFFF00
+      }
+      OnClick = BSimpanClick
+      TabOrder = 0
+    end
+  end
+  object PTengah: TPanel
+    Left = 0
+    Height = 304
+    Top = 50
+    Width = 326
+    Align = alClient
+    BevelOuter = bvLowered
+    ClientHeight = 304
+    ClientWidth = 326
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 40
+      Height = 15
+      Top = 24
+      Width = 83
+      Caption = 'Tanggal Pemilu'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 40
+      Height = 15
+      Top = 84
+      Width = 100
+      Caption = 'Background Image'
+      ParentColor = False
+    end
+    object ShapeGambar: TShape
+      Left = 40
+      Height = 115
+      Top = 103
+      Width = 248
+      Pen.Color = clSilver
+    end
+    object ImageBackground: TImage
+      Left = 47
+      Height = 100
+      Top = 110
+      Width = 233
+      Center = True
+      OnClick = ImageBackgroundClick
+      Proportional = True
+      Stretch = True
+    end
+    object DateTglPemilu: TDateTimePicker
+      Left = 40
+      Height = 23
+      Top = 44
+      Width = 83
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      TabOrder = 0
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 43273
+      Time = 0.474754236114677
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+    object Label2: TLabel
+      Left = 40
+      Height = 15
+      Top = 235
+      Width = 163
+      Caption = 'Pemisah Format SMS dan Chat'
+      ParentColor = False
+    end
+    object EPemisah: TEdit
+      Left = 40
+      Height = 23
+      Top = 253
+      Width = 168
+      TabOrder = 1
+      Text = 'EPemisah'
+    end
+    object GroupBox1: TGroupBox
+      Left = 176
+      Height = 65
+      Top = 16
+      Width = 112
+      Caption = 'Jumlah Pemilih'
+      ClientHeight = 45
+      ClientWidth = 108
+      TabOrder = 2
+      object EPilpres: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 91
+        OnChange = EPilpresChange
+        OnKeyPress = EPilpresKeyPress
+        TabOrder = 0
+        Text = 'EPilpres'
+      end
+      object EPilgub: TEdit
+        Left = 11
+        Height = 23
+        Top = 8
+        Width = 88
+        OnChange = EPilgubChange
+        OnKeyPress = EPilgubKeyPress
+        TabOrder = 1
+        Text = 'EPilgub'
+      end
+      object EPilbupKota: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 91
+        OnChange = EPilbupKotaChange
+        OnKeyPress = EPilbupKotaKeyPress
+        TabOrder = 2
+        Text = 'EPilbupKota'
+      end
+      object EPartai: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 91
+        OnChange = EPartaiChange
+        OnKeyPress = EPartaiKeyPress
+        TabOrder = 3
+        Text = 'EPartai'
+      end
+      object EPilegKabKota: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 91
+        OnChange = EPilegKabKotaChange
+        OnKeyPress = EPilegKabKotaKeyPress
+        TabOrder = 4
+        Text = 'EPilegKabKota'
+      end
+      object EPilegProv: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 91
+        OnChange = EPilegProvChange
+        OnKeyPress = EPilegProvKeyPress
+        TabOrder = 5
+        Text = 'EPilegProv'
+      end
+      object EPilegDPR: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 91
+        OnChange = EPilegDPRChange
+        OnKeyPress = EPilegDPRKeyPress
+        TabOrder = 6
+        Text = 'EPilegDPR'
+      end
+      object EPilegDPD: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 91
+        OnChange = EPilegDPDChange
+        OnKeyPress = EPilegDPDKeyPress
+        TabOrder = 7
+        Text = 'EPilegDPD'
+      end
+      object EPilkades: TEdit
+        Left = 8
+        Height = 23
+        Top = 8
+        Width = 90
+        OnChange = EPilkadesChange
+        OnKeyPress = EPilkadesKeyPress
+        TabOrder = 8
+        Text = 'EPilkades'
+      end
+    end
+  end
+  object OPD: TOpenPictureDialog
+    Filter = 'Portable Network Graphic (*.png)|*.png'
+    left = 72
+    top = 192
+  end
+end

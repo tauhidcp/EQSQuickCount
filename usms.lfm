@@ -1,0 +1,186 @@
+object FSMS: TFSMS
+  Left = 508
+  Height = 397
+  Top = 195
+  Width = 414
+  BorderIcons = [biSystemMenu]
+  Caption = 'FSMS'
+  ClientHeight = 397
+  ClientWidth = 414
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object PBawah: TPanel
+    Left = 0
+    Height = 50
+    Top = 347
+    Width = 414
+    Align = alBottom
+    BevelOuter = bvLowered
+    ClientHeight = 50
+    ClientWidth = 414
+    TabOrder = 0
+    object BKirim: TBitBtn
+      Left = 168
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Kirim'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000771309FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00007D21F5037B1EFF0079
+        1521FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0001832BF543A15FFF007B
+        1FE400791927FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00219751FE1B9149FE158F43FE0F8B3BFE3A9F5EFF80C196FF46A3
+        62FF007D1FE70079192AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00299B5BFF90CAA9FF8DC8A5FF8AC6A1FF88C59EFF6AB685FF82C2
+        97FF48A566FF007D21EA00791B30FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00319F63FF94CDADFF6FBA8EFF6BB889FF66B685FF61B380FF67B5
+        82FF83C298FF3CA05CFF007F25FCFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF0037A36BFF96CEB0FF94CDADFF91CBAAFF90CBA8FF74BC90FF8AC7
+        A1FF46A568FF078735FD01832D0FFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF003DA56FFF37A36DFD33A167FD2F9D61FD55AF7CFF91CBAAFF4FAB
+        74FF178F45FD118B3D0CFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00319F63F55AB381FF2898
+        57FF1F954F09FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0037A36BF5319F65FF2D9D
+        5F09FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      OnClick = BKirimClick
+      TabOrder = 0
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 297
+    Top = 50
+    Width = 414
+    Align = alClient
+    BevelOuter = bvLowered
+    ClientHeight = 297
+    ClientWidth = 414
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 40
+      Height = 15
+      Top = 29
+      Width = 61
+      Caption = 'Pengiriman'
+      ParentColor = False
+    end
+    object CbKirim: TComboBox
+      Left = 120
+      Height = 23
+      Top = 24
+      Width = 112
+      ItemHeight = 15
+      Items.Strings = (
+        'Single'
+        'Broadcast'
+      )
+      OnChange = CbKirimChange
+      OnKeyPress = CbKirimKeyPress
+      TabOrder = 0
+      Text = '-Pilih-'
+    end
+    object Label2: TLabel
+      Left = 40
+      Height = 15
+      Top = 61
+      Width = 42
+      Caption = 'Modem'
+      ParentColor = False
+    end
+    object CbModem: TComboBox
+      Left = 120
+      Height = 23
+      Top = 57
+      Width = 112
+      ItemHeight = 15
+      OnKeyPress = CbModemKeyPress
+      TabOrder = 1
+      Text = '-Pilih-'
+    end
+    object CbGroup: TComboBox
+      Left = 240
+      Height = 23
+      Top = 24
+      Width = 132
+      ItemHeight = 15
+      Items.Strings = (
+        'Saksi'
+        'Relawan (TIMSES)'
+        'Data Koor. TPS'
+        'Data Pendukung Independen'
+        'Data Polling'
+        'Data Usul Saran'
+        'Peta Suara'
+      )
+      OnKeyPress = CbGroupKeyPress
+      TabOrder = 2
+      Text = '-Pilih-'
+      Visible = False
+    end
+    object ENomor: TEdit
+      Left = 240
+      Height = 23
+      Top = 24
+      Width = 132
+      OnKeyPress = ENomorKeyPress
+      TabOrder = 3
+      Text = 'ENomor'
+      Visible = False
+    end
+    object MPesan: TMemo
+      Left = 40
+      Height = 144
+      Top = 120
+      Width = 332
+      OnKeyPress = MPesanKeyPress
+      TabOrder = 4
+    end
+    object LLimitChar: TLabel
+      Left = 40
+      Height = 15
+      Top = 264
+      Width = 58
+      Caption = 'LLimitChar'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 40
+      Height = 15
+      Top = 96
+      Width = 79
+      Caption = 'Isi Pesan (SMS)'
+      ParentColor = False
+    end
+  end
+  object PAtas: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 414
+    Align = alTop
+    BevelOuter = bvLowered
+    Caption = 'Form Kirim SMS'
+    Font.Height = -17
+    ParentFont = False
+    TabOrder = 2
+  end
+end
