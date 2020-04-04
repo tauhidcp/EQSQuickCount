@@ -8,3 +8,5 @@ Komponen Tambahan
 - RxLib
 - FPSpreadSheet
 - ZeosLib
+
+https://www.eqsquickcount.com/
