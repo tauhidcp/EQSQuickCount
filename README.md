@@ -9,4 +9,4 @@ Komponen Tambahan
 - FPSpreadSheet
 - ZeosLib
 
-[[https://eqsquickcount.blogspot.com/](https://eqsquickcount.blogspot.com/)
+[https://eqsquickcount.blogspot.com/](https://eqsquickcount.blogspot.com/)
